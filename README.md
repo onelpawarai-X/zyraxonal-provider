@@ -1,41 +1,58 @@
-# ZYRAXON AI Hub
+# ZYRAXON AI — Open Source Model & Provider Directory
 
-https://github.com/anomalyco/models.dev.git  
+<div align="center">
+  <p><strong>An open-source database of artificial intelligence models, provider endpoints, capabilities, and live pricing.</strong></p>
+  <p>Developed by <strong>onelpawarai</strong> · Based in Bangladesh, operating globally.</p>
+</div>
 
-এটা সম্পূর্ণ clone করবা। এটা সম্পূর্ণ clone করার পরে এখানে যা তথ্য আছে সবকিছু আমাদের দ্বারা replace করবা। এটা হচ্ছে আমাদের GitHub real account এটা থেকে তথ্য নিয়েhttps://github.com/onelpawarai-X/ZYRAXON-AI.git 
+---
 
-এই জাইরক্সনিয়া এর থেকে তথ্য নিয়ে এবং এগুলো হচ্ছে আমাদের তথ্য।
-	
+## 🌐 Ecosystem & Official Links
 
-Author	onelpawarai
-Based in	Bangladesh · operating globally
-Email	sayidilxs@gmail.com
-Website	zyraxonai.lovable.app
-Cloud Agent	zyraxon-pro-x.lovable.app
-Portfolio	onelpawarai.lovable.app
-YouTube	@ZYRAXONAI
-Facebook	onelpawarai
-Access codes	ZYRAXON Group
+- **Website:** [zyraxonai.lovable.app](https://zyraxonai.lovable.app)
+- **Cloud Agent:** [zyraxon-pro-x.lovable.app](https://zyraxon-pro-x.lovable.app)
+- **Portfolio:** [onelpawarai.lovable.app](https://onelpawarai.lovable.app)
+- **Access Codes:** [ZYRAXON Group](https://zyraxon-group-x.lovable.app)
+- **YouTube:** [@ZYRAXONAI](https://www.youtube.com/@ZYRAXONAI)
+- **Facebook:** [onelpawarai](https://www.facebook.com/onelpawarai)
+- **Email:** [sayidilxs@gmail.com](mailto:sayidilxs@gmail.com)
 
-এটা সম্পূর্ণ আমাদের লোগো দ্বারা refresh করবা। সম্পূর্ণ আমাদের লোগো ইত্যাদি। মানে কেউ যেন বলতে না পারে এটা অন্য কারোর। সুন্দর করে করবা। Open code নামটাই পরিবর্তন করে ফেলবা। কিন্তু এটার ভিতরে যে provider গুলা আছে ওখান থেকে যেন Open code পরিবর্তন না হয়। কেননা Open code provider প্রয়োজন আছে। এখান থেকে সুন্দরভাবে সবকিছু করো।
+---
 
-This project was built with [Lovable](https://lovable.dev).
+## 🚀 About the Project
 
-## Build with Lovable
+**ZYRAXON AI Model Directory** is a high-performance index and catalog tracking:
+- **440+ AI models** with context limits, token pricing, reasoning, structured output, and benchmark scores.
+- **220+ AI providers** with API specifications, SDK packages (`npm`), documentation, and supported model lists.
+- **Labs and Research Teams** powering the next frontier of intelligence.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5).
+---
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## 🤝 Contributing: How to Add a Provider or Model
 
-## Development
+We welcome community contributions from AI creators, labs, and hosting platforms! All valid pull requests that match our schema are automatically merged.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### 1. Adding a New Provider
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+To register a new inference provider, open `src/lib/catalog/snapshot.json` and add your provider configuration under the `"providers"` object:
+
+```json
+"your-provider-id": {
+  "id": "your-provider-id",
+  "name": "Your Provider Name",
+  "doc": "https://docs.yourprovider.com",
+  "api": "https://api.yourprovider.com/v1",
+  "npm": "@ai-sdk/openai-compatible",
+  "env": ["YOUR_PROVIDER_API_KEY"],
+  "models": {
+    "model-name": {
+      "id": "model-name",
+      "name": "Model Display Name",
+      "cost": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 0.1
+      }
+    }
+  }
+}
