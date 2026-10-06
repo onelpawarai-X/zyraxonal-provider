@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004499;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- X Mark (Axe/Strike symbol) -->
+  <g transform="translate(60,60)" stroke="url(#glow)" stroke-width="14" stroke-linecap="round" fill="none">
+    <line x1="-32" y1="-32" x2="0" y2="0"/>
+    <line x1="0" y1="0" x2="32" y2="32"/>
+    <line x1="-32" y1="32" x2="0" y2="0"/>
+    <line x1="0" y1="0" x2="32" y2="-32"/>
+    <line x1="-44" y1="0" x2="-32" y2="-32" stroke-width="6" opacity="0.6"/>
+    <line x1="44" y1="0" x2="32" y2="32" stroke-width="6" opacity="0.6"/>
+    <line x1="0" y1="-44" x2="32" y2="-32" stroke-width="6" opacity="0.6"/>
+    <line x1="0" y1="44" x2="-32" y2="32" stroke-width="6" opacity="0.6"/>
+  </g></svg>
