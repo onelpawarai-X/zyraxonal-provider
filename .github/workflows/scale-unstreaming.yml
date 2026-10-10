@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Sync catalog
+      - name: Sync catalog and logos
         id: sync
         run: |
           out=$(node scripts/sync-catalog.mjs)
@@ -30,14 +30,13 @@ jobs:
           echo "result=$out" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push changes
-        if: ${{ !contains(steps.sync.outputs.result, 'NO_CHANGES') }}
         run: |
           git config user.name "zyraxon-sync-bot"
           git config user.email "sayidilxs@gmail.com"
-          git add src/lib/catalog/snapshot.json public/api.json public/models.json public/providers.json public/catalog-meta.json
+          git add src/lib/catalog/snapshot.json public/api.json public/models.json public/providers.json public/catalog-meta.json public/logos/
           if git diff --cached --quiet; then
             echo "Nothing to commit"
             exit 0
           fi
-          git commit -m "chore(catalog): ${{ steps.sync.outputs.result }}"
+          git commit -m "chore(catalog): sync models and provider logos"
           git push
