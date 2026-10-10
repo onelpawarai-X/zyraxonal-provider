@@ -18,7 +18,7 @@ export const catalog = snapshot as unknown as Catalog
 export const providers = Object.values(catalog.providers).sort((a,b) => a.name.localeCompare(b.name))
 export const models = Object.values(catalog.models)
 export const labName = (id: string) => ({ 'moonshotai': 'Moonshot AI', 'zhipuai': 'Zhipu AI', 'alibaba': 'Alibaba', 'bytedance-seed': 'ByteDance Seed', 'inclusionai': 'InclusionAI', 'meta': 'Meta', 'xai': 'xAI', 'openai': 'OpenAI', 'minimax': 'MiniMax', 'deepseek': 'DeepSeek', 'openbmb': 'OpenBMB' }[id] ?? catalog.providers[id]?.name ?? id.replace(/(^|-)(\w)/g, (_,s: string,c: string) => `${s ? ' ' : ''}${c.toUpperCase()}`))
-export const labId = (model: Model) => model.id.includes('/') ? model.id.split('/')[0].replace(/^[~@]/, '') : (model.family ?? 'other').split(/[-\d]/)[0] || 'other'
+export const labId = (model: Model) => model.id.includes('/') ? (model.id.split('/')[0] ?? '').replace(/^[~@]/, '') : (model.family ?? 'other').split(/[-\d]/)[0] || 'other'
 export const entriesByModel = new Map<string, Entry[]>()
 for (const provider of providers) {
   for (const model of Object.values(provider.models)) {
