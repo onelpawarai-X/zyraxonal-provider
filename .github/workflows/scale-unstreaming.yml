@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "zyraxon-sync-bot"
           git config user.email "sayidilxs@gmail.com"
-          git add src/lib/catalog/snapshot.json public/api.json public/catalog-meta.json
+          git add src/lib/catalog/snapshot.json public/api.json public/models.json public/providers.json public/catalog-meta.json
           if git diff --cached --quiet; then
             echo "Nothing to commit"
             exit 0
