@@ -53,6 +53,16 @@ if (previous && hash(previous) === hash(snapshot)) {
 await mkdir('public', { recursive: true })
 await writeFile(SNAPSHOT, snapshot)
 await writeFile(API, api)
+// models.json: same as upstream /models.json when available, else our merged unique list.
+let modelsJson = JSON.stringify(models)
+try {
+  const r = await fetch(SOURCE.replace(/api\.json$/, 'models.json'), { headers: { 'user-agent': 'zyraxon-ai-sync' } })
+  if (r.ok) { const m = await r.json(); if (Object.keys(m).length >= 500) modelsJson = JSON.stringify(m) }
+} catch {}
+await writeFile('public/models.json', modelsJson)
+// providers.json: provider list without model payloads.
+const providerList = Object.fromEntries(Object.entries(providers).map(([id, { models: pm, ...rest }]) => [id, { ...rest, id, model_count: Object.keys(pm).length }]))
+await writeFile('public/providers.json', JSON.stringify(providerList))
 const variants = Object.values(providers).reduce((n, p) => n + Object.keys(p.models).length, 0)
 await writeFile(META, JSON.stringify({ synced_at: new Date().toISOString(), providers: Object.keys(providers).length, models: modelCount, variants }, null, 2))
 console.log(`UPDATED providers=${Object.keys(providers).length} models=${modelCount} variants=${variants}`)
