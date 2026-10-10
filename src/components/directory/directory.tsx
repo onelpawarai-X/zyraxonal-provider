@@ -125,20 +125,35 @@ export function Directory({ view }: { view: View }) {
     if (view === 'models') {
       data = data.filter(r => {
         if (!r.model) return false
+        const m = r.model
+        const text = `${m.id} ${m.name || ''}`.toLowerCase()
+        const isAudio = m.modalities?.input?.includes('audio') || m.modalities?.output?.includes('audio')
+        const isVideoOrMedia =
+          m.modalities?.input?.includes('video') ||
+          m.modalities?.output?.includes('video') ||
+          m.modalities?.output?.includes('image') ||
+          text.includes('video') ||
+          text.includes('music') ||
+          text.includes('sora')
+
         return (
-          (!labFilter || labId(r.model) === labFilter) &&
+          (!labFilter || labId(m) === labFilter) &&
           (!feature ||
-            (feature === 'open'
-              ? r.model.open_weights
-              : feature === 'reasoning'
-                ? r.model.reasoning
-                : feature === 'tools'
-                  ? r.model.tool_call
-                  : feature === 'structured'
-                    ? r.model.structured_output
-                    : feature === 'image'
-                      ? r.model.modalities?.input?.includes('image')
-                      : true))
+            (feature === 'realtime'
+              ? m.tool_call && (isAudio || text.includes('realtime') || text.includes('live') || text.includes('omni'))
+              : feature === 'creative'
+                ? m.tool_call && isVideoOrMedia
+                : feature === 'open'
+                  ? m.open_weights
+                  : feature === 'reasoning'
+                    ? m.reasoning
+                    : feature === 'tools'
+                      ? m.tool_call
+                      : feature === 'structured'
+                        ? m.structured_output
+                        : feature === 'image'
+                          ? m.modalities?.input?.includes('image')
+                          : true))
         )
       })
     }
@@ -312,8 +327,10 @@ export function Directory({ view }: { view: View }) {
             </select>
             <select className="filter-select" aria-label="Filter capabilities" value={feature} onChange={e => setFeature(e.target.value)}>
               <option value="">All capabilities</option>
-              <option value="reasoning">Reasoning</option>
+              <option value="realtime">⚡ Realtime Voice + Tools (Google / OpenAI)</option>
+              <option value="creative">🎨 Video & Media + Tools (Google / OpenAI)</option>
               <option value="tools">Tool calling</option>
+              <option value="reasoning">Reasoning</option>
               <option value="structured">Structured output</option>
               <option value="open">Open weights</option>
               <option value="image">Image input</option>
@@ -362,7 +379,6 @@ export function Directory({ view }: { view: View }) {
               if (!row) return null
               const m = row.model
               const cost = m ? priceOf(m) : undefined
-              const latest = row.lab ? [...row.lab.models].sort((a, b) => (b.release_date ?? '').localeCompare(a.release_date ?? ''))[0] : undefined
               return (
                 <div
                   key={row.id}
@@ -434,9 +450,9 @@ export function Directory({ view }: { view: View }) {
                   ) : row.lab ? (
                     <>
                       <div className="mono-value">{row.lab.models.length}</div>
-                      <div className="model-name">{latest?.name ?? '—'}</div>
+                      <div className="model-name">{row.lab.models[0]?.name ?? '—'}</div>
                       <div className="mono-value">{row.lab.models.filter(m => m.open_weights).length} / {row.lab.models.length}</div>
-                      <div className="mono-value">{latest?.release_date ?? '—'}</div>
+                      <div className="mono-value">{row.lab.models[0]?.release_date ?? '—'}</div>
                     </>
                   ) : null}
                 </div>
@@ -652,6 +668,13 @@ export function Directory({ view }: { view: View }) {
                   </a>
                 </Button>
               </div>
+              <h3 className="detail-section-title">Google & OpenAI (Tool Call Models)</h3>
+              <div className="text-xs space-y-2 text-muted-foreground bg-muted/40 p-3 rounded border">
+                <div><strong>Google Realtime:</strong> <code>gemini-3.1-flash-live-preview</code> (Tool Call: Yes)</div>
+                <div><strong>Google Video & Media:</strong> <code>gemini-3.6-flash</code> / <code>gemini-3-pro-preview</code> (Tool Call: Yes)</div>
+                <div><strong>OpenAI Realtime:</strong> <code>openai/gpt-realtime-1.5</code> / <code>openai/gpt-audio</code> (Tool Call: Yes)</div>
+                <div><strong>OpenAI Video & Media:</strong> <code>gpt-5</code> / <code>gpt-5-mini</code> (Tool Call: Yes)</div>
+              </div>
               <h3 className="detail-section-title">Model lookup</h3>
               <pre className="code-block">{'const model = catalog.models["openai/gpt-5"];\nconst provider = catalog.providers["openai"];\n\nconsole.log(model.limit.context);\nconsole.log(provider.models);'}</pre>
               <h3 className="detail-section-title">Build with your agent</h3>
@@ -667,7 +690,7 @@ export function Directory({ view }: { view: View }) {
                   </a>
                 </Button>
               </div>
-              <p className="text-[11px] text-muted-foreground">Catalog snapshot: October 6, 2026. Prices are USD per million tokens and may vary by provider.</p>
+              <p className="text-[11px] text-muted-foreground">Catalog snapshot: October 2026. Prices are USD per million tokens and may vary by provider.</p>
             </>
           )}
         </DialogContent>
