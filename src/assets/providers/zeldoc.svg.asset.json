@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "5e111374-e0cc-427b-bf33-4f19c3fd4512",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/5e111374-e0cc-427b-bf33-4f19c3fd4512/zeldoc.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/5e111374-e0cc-427b-bf33-4f19c3fd4512/zeldoc.svg",
-  "original_filename": "zeldoc.svg",
-  "size": 915,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:40Z"
+  "created_at": "2026-10-06T03:40:40Z",
+  "original_filename": "zeldoc.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/5e111374-e0cc-427b-bf33-4f19c3fd4512/zeldoc.svg",
+  "size": 915,
+  "url": "/__l5e/assets-v1/5e111374-e0cc-427b-bf33-4f19c3fd4512/zeldoc.svg",
+  "version": 1
 }

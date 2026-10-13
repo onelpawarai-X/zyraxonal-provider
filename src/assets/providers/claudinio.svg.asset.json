@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "2b0c4de5-a371-427e-8d55-255d4b8720f9",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/2b0c4de5-a371-427e-8d55-255d4b8720f9/claudinio.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/2b0c4de5-a371-427e-8d55-255d4b8720f9/claudinio.svg",
-  "original_filename": "claudinio.svg",
-  "size": 17979,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:47Z"
+  "created_at": "2026-10-06T03:40:47Z",
+  "original_filename": "claudinio.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/2b0c4de5-a371-427e-8d55-255d4b8720f9/claudinio.svg",
+  "size": 17979,
+  "url": "/__l5e/assets-v1/2b0c4de5-a371-427e-8d55-255d4b8720f9/claudinio.svg",
+  "version": 1
 }

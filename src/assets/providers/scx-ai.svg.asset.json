@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "961c1e37-4d7a-4f68-afc0-09962b9fdb4a",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/961c1e37-4d7a-4f68-afc0-09962b9fdb4a/scx-ai.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/961c1e37-4d7a-4f68-afc0-09962b9fdb4a/scx-ai.svg",
-  "original_filename": "scx-ai.svg",
-  "size": 4935,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:40Z"
+  "created_at": "2026-10-06T03:40:40Z",
+  "original_filename": "scx-ai.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/961c1e37-4d7a-4f68-afc0-09962b9fdb4a/scx-ai.svg",
+  "size": 4935,
+  "url": "/__l5e/assets-v1/961c1e37-4d7a-4f68-afc0-09962b9fdb4a/scx-ai.svg",
+  "version": 1
 }

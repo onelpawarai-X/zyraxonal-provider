@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "0ea9a154-1a45-43ea-8607-e423367f3fab",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/0ea9a154-1a45-43ea-8607-e423367f3fab/api.json",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/0ea9a154-1a45-43ea-8607-e423367f3fab/api.json",
-  "original_filename": "api.json",
-  "size": 5321100,
   "content_type": "application/json",
-  "created_at": "2026-10-06T03:38:33Z"
+  "created_at": "2026-10-06T03:38:33Z",
+  "original_filename": "api.json",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/0ea9a154-1a45-43ea-8607-e423367f3fab/api.json",
+  "size": 5321100,
+  "url": "/__l5e/assets-v1/0ea9a154-1a45-43ea-8607-e423367f3fab/api.json",
+  "version": 1
 }

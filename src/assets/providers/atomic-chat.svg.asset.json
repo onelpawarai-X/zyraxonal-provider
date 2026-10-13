@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "17e8359b-62b7-463e-b960-3ebb1e416bc7",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/17e8359b-62b7-463e-b960-3ebb1e416bc7/atomic-chat.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/17e8359b-62b7-463e-b960-3ebb1e416bc7/atomic-chat.svg",
-  "original_filename": "atomic-chat.svg",
-  "size": 9649,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:03Z"
+  "created_at": "2026-10-06T03:40:03Z",
+  "original_filename": "atomic-chat.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/17e8359b-62b7-463e-b960-3ebb1e416bc7/atomic-chat.svg",
+  "size": 9649,
+  "url": "/__l5e/assets-v1/17e8359b-62b7-463e-b960-3ebb1e416bc7/atomic-chat.svg",
+  "version": 1
 }

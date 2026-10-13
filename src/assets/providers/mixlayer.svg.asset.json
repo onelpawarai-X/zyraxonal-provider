@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "31c2a3a0-8df4-4746-8fc9-17e7df64fc48",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/31c2a3a0-8df4-4746-8fc9-17e7df64fc48/mixlayer.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/31c2a3a0-8df4-4746-8fc9-17e7df64fc48/mixlayer.svg",
-  "original_filename": "mixlayer.svg",
-  "size": 2135,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:16Z"
+  "created_at": "2026-10-06T03:40:16Z",
+  "original_filename": "mixlayer.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/31c2a3a0-8df4-4746-8fc9-17e7df64fc48/mixlayer.svg",
+  "size": 2135,
+  "url": "/__l5e/assets-v1/31c2a3a0-8df4-4746-8fc9-17e7df64fc48/mixlayer.svg",
+  "version": 1
 }

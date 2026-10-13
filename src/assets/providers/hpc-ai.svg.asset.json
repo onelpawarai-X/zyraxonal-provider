@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "4965af89-714e-40f3-b80b-d280b095f19a",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/4965af89-714e-40f3-b80b-d280b095f19a/hpc-ai.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/4965af89-714e-40f3-b80b-d280b095f19a/hpc-ai.svg",
-  "original_filename": "hpc-ai.svg",
-  "size": 34469,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:39:58Z"
+  "created_at": "2026-10-06T03:39:58Z",
+  "original_filename": "hpc-ai.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/4965af89-714e-40f3-b80b-d280b095f19a/hpc-ai.svg",
+  "size": 34469,
+  "url": "/__l5e/assets-v1/4965af89-714e-40f3-b80b-d280b095f19a/hpc-ai.svg",
+  "version": 1
 }

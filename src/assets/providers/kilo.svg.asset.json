@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "0d51f291-fb5d-4f4b-ab45-853df970dac4",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/0d51f291-fb5d-4f4b-ab45-853df970dac4/kilo.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/0d51f291-fb5d-4f4b-ab45-853df970dac4/kilo.svg",
-  "original_filename": "kilo.svg",
-  "size": 291,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:10Z"
+  "created_at": "2026-10-06T03:40:10Z",
+  "original_filename": "kilo.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/0d51f291-fb5d-4f4b-ab45-853df970dac4/kilo.svg",
+  "size": 291,
+  "url": "/__l5e/assets-v1/0d51f291-fb5d-4f4b-ab45-853df970dac4/kilo.svg",
+  "version": 1
 }

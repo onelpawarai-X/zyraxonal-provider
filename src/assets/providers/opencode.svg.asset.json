@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "42a08b0d-7491-4c83-b5de-b4d40a724cd5",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/42a08b0d-7491-4c83-b5de-b4d40a724cd5/opencode.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/42a08b0d-7491-4c83-b5de-b4d40a724cd5/opencode.svg",
-  "original_filename": "opencode.svg",
-  "size": 276,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:40Z"
+  "created_at": "2026-10-06T03:40:40Z",
+  "original_filename": "opencode.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/42a08b0d-7491-4c83-b5de-b4d40a724cd5/opencode.svg",
+  "size": 276,
+  "url": "/__l5e/assets-v1/42a08b0d-7491-4c83-b5de-b4d40a724cd5/opencode.svg",
+  "version": 1
 }

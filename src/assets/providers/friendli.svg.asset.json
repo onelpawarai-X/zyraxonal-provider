@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "2891d686-8666-4ce2-a0a4-2a05dcdd49ff",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/2891d686-8666-4ce2-a0a4-2a05dcdd49ff/friendli.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/2891d686-8666-4ce2-a0a4-2a05dcdd49ff/friendli.svg",
-  "original_filename": "friendli.svg",
-  "size": 2196,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:10Z"
+  "created_at": "2026-10-06T03:40:10Z",
+  "original_filename": "friendli.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/2891d686-8666-4ce2-a0a4-2a05dcdd49ff/friendli.svg",
+  "size": 2196,
+  "url": "/__l5e/assets-v1/2891d686-8666-4ce2-a0a4-2a05dcdd49ff/friendli.svg",
+  "version": 1
 }

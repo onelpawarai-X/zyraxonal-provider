@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "08e6bb1d-eea3-4b16-a557-5bfd7dd719ea",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/08e6bb1d-eea3-4b16-a557-5bfd7dd719ea/xiaomi.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/08e6bb1d-eea3-4b16-a557-5bfd7dd719ea/xiaomi.svg",
-  "original_filename": "xiaomi.svg",
-  "size": 1734,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:32Z"
+  "created_at": "2026-10-06T03:40:32Z",
+  "original_filename": "xiaomi.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/08e6bb1d-eea3-4b16-a557-5bfd7dd719ea/xiaomi.svg",
+  "size": 1734,
+  "url": "/__l5e/assets-v1/08e6bb1d-eea3-4b16-a557-5bfd7dd719ea/xiaomi.svg",
+  "version": 1
 }

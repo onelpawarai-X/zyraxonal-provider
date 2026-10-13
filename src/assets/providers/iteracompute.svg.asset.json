@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "cff829a5-1aa9-4a41-8948-bd8f8f872307",
-  "project_id": "e9d915cc-d6bc-4218-aa7d-de7d28d94ae5",
-  "url": "/__l5e/assets-v1/cff829a5-1aa9-4a41-8948-bd8f8f872307/iteracompute.svg",
-  "r2_key": "a/v1/e9d915cc-d6bc-4218-aa7d-de7d28d94ae5/cff829a5-1aa9-4a41-8948-bd8f8f872307/iteracompute.svg",
-  "original_filename": "iteracompute.svg",
-  "size": 6350,
   "content_type": "image/svg+xml",
-  "created_at": "2026-10-06T03:40:32Z"
+  "created_at": "2026-10-06T03:40:32Z",
+  "original_filename": "iteracompute.svg",
+  "project_id": "85940efc-5bcc-47fb-97d1-8dcf3f8058d7",
+  "r2_key": "a/v1/85940efc-5bcc-47fb-97d1-8dcf3f8058d7/cff829a5-1aa9-4a41-8948-bd8f8f872307/iteracompute.svg",
+  "size": 6350,
+  "url": "/__l5e/assets-v1/cff829a5-1aa9-4a41-8948-bd8f8f872307/iteracompute.svg",
+  "version": 1
 }
