@@ -1,42 +1,70 @@
-name: Sync upstream catalog
+name: Sync Upstream Catalog & Auto-Merge PR
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # every 6 hours
-  workflow_dispatch:
+    - cron: "0 */4 * * *" # প্রতি ৪ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে স্ক্যান হবে
+  workflow_dispatch:      # Actions ট্যাব থেকে যেকোনো সময় ম্যানুয়ালি রান করার জন্য
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: catalog-sync
   cancel-in-progress: false
 
 jobs:
-  sync:
+  sync-and-pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Sync catalog and logos
-        id: sync
+      - name: Scan & sync models.dev catalog
         run: |
-          out=$(node scripts/sync-catalog.mjs)
-          echo "$out"
-          echo "result=$out" >> "$GITHUB_OUTPUT"
+          node scripts/sync-catalog.mjs
 
-      - name: Commit and push changes
+      - name: Check for changes & create/merge PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "zyraxon-sync-bot"
           git config user.email "sayidilxs@gmail.com"
+
+          # পরিবর্তনের ফাইলগুলো স্টেজিংয়ে যুক্ত করা
           git add src/lib/catalog/snapshot.json public/api.json public/models.json public/providers.json public/catalog-meta.json public/logos/
+
+          # কোনো পরিবর্তন না থাকলে প্রস্থান করা
           if git diff --cached --quiet; then
-            echo "Nothing to commit"
+            echo "No changes found. Upstream catalog is up-to-date."
             exit 0
           fi
-          git commit -m "chore(catalog): sync models and provider logos"
-          git push
+
+          TIMESTAMP=$(date +%s)
+          BRANCH_NAME="sync/catalog-${TIMESTAMP}"
+
+          echo "Changes detected! Creating branch: $BRANCH_NAME"
+          git checkout -b "$BRANCH_NAME"
+          git commit -m "chore(catalog): automated sync with upstream models.dev"
+          git push origin "$BRANCH_NAME"
+
+          echo "Creating Pull Request..."
+          PR_URL=$(gh pr create \
+            --base main \
+            --head "$BRANCH_NAME" \
+            --title "chore(catalog): auto-sync latest models & providers" \
+            --body "Automated sync from models.dev upstream. Contains latest model additions, removals, and provider logos." \
+            --label "automated-sync")
+
+          echo "PR created at: $PR_URL"
+          echo "Auto-merging PR into main..."
+          gh pr merge "$PR_URL" --squash --delete-branch --admin || gh pr merge "$PR_URL" --squash --delete-branch
+
+          echo "Successfully merged upstream updates into main!"
