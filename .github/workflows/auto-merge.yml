@@ -35,10 +35,10 @@ jobs:
               });
               console.log(`Approved PR #${pr.number}`);
             } catch (error) {
-              console.log('Review error (ignoring if self-PR):', error.message);
+              console.log('Review error:', error.message);
             }
 
-            // ২. PR স্বয়ংক্রিয় মার্জ (Merge) করা
+            // ২. PR স্বয়ংক্রিয় squash মার্জ করা
             try {
               await github.rest.pulls.merge({
                 owner: context.repo.owner,
