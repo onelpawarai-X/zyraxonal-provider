@@ -538,17 +538,6 @@
     "doc": "https://api.cortecs.ai/v1/models",
     "model_count": 106
   },
-  "crof": {
-    "id": "crof",
-    "env": [
-      "CROF_API_KEY"
-    ],
-    "npm": "@ai-sdk/openai-compatible",
-    "api": "https://crof.ai/v1",
-    "name": "CrofAI",
-    "doc": "https://crof.ai/docs",
-    "model_count": 24
-  },
   "crossmodel": {
     "id": "crossmodel",
     "env": [
@@ -679,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 339
+    "model_count": 343
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -690,7 +679,7 @@
     "api": "https://api.empiriolabs.ai/v1",
     "name": "EmpirioLabs AI",
     "doc": "https://docs.empiriolabs.ai",
-    "model_count": 65
+    "model_count": 63
   },
   "engy": {
     "id": "engy",
@@ -944,7 +933,7 @@
     "api": "https://api.inceptionlabs.ai/v1/",
     "name": "Inception",
     "doc": "https://docs.inceptionlabs.ai/get-started/models",
-    "model_count": 3
+    "model_count": 4
   },
   "inceptron": {
     "id": "inceptron",
@@ -1351,7 +1340,7 @@
     "npm": "@ai-sdk/mistral",
     "name": "Mistral",
     "doc": "https://docs.mistral.ai/getting-started/models/",
-    "model_count": 42
+    "model_count": 39
   },
   "mixlayer": {
     "id": "mixlayer",
