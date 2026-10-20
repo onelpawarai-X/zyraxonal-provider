@@ -3,7 +3,7 @@ name: Scale & Refresh Provider Endpoints (PR & Auto-Merge)
 on:
   schedule:
     - cron: "0 */4 * * *" # প্রতি ৪ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে চলবে
-  workflow_dispatch:      # Actions ট্যাব থেকে যেকোনো সময় ১-ক্লিকে রান করার সুবিধা
+  workflow_dispatch:      # Actions ট্যাব থেকে ম্যানুয়ালি ১-ক্লিকে রান করার সুবিধা
 
 permissions:
   contents: write
@@ -114,7 +114,7 @@ jobs:
           git commit -m "chore(catalog): refresh provider endpoints and upstream models"
           git push origin "$BRANCH_NAME"
 
-          # ২. স্বয়ংক্রিয় Pull Request তৈরি করা
+          # ২. স্বয়ংক্রিয় Pull Request তৈরি করা (লেবেল ছাড়াই, যাতে কোনো এরর না হয়)
           echo "Opening Pull Request..."
           PR_URL=$(gh pr create \
             --base main \
@@ -123,14 +123,12 @@ jobs:
             --body "Automated sync bot detected changes:
             - Refreshed provider endpoints (OpenCode, OpenCode Go, Standard Compute)
             - Synced latest upstream models, providers, and logos
-            - Auto-merging into main branch." \
-            --label "automated-sync")
+            - Auto-merging into main branch.")
 
           echo "Pull Request successfully created at: $PR_URL"
 
-          # ৩. সরাসরি Squash Merge করে দেওয়া এবং ব্রাঞ্চ ডিলিট করা
+          # ৩. সরাসরি Squash Merge করা এবং টেম্পোরারি ব্রাঞ্চ ডিলিট করা
           echo "Auto-merging Pull Request into main..."
-          gh pr merge "$PR_URL" --squash --delete-branch --admin || gh pr merge "$PR_URL" --squash --delete-branch
+          gh pr merge "$PR_URL" --squash --delete-branch || echo "PR created successfully. Manual merge fallback if branch protection applies."
 
-          echo "PR successfully merged into main! Branch $BRANCH_NAME deleted."
-
+          echo "Sync workflow completed successfully!"
