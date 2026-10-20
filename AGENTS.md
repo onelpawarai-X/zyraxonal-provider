@@ -13,3 +13,4 @@
 - Use a build-processed catalog snapshot for initial reads and CDN assets for complete JSON downloads so SSR needs no external API.
 - Preserve upstream provider identities and MIT license notices independently from site branding so rebranding never alters provider records.
 - Catalog data is refreshed only by `scripts/sync-catalog.mjs` (run on a schedule by `.github/workflows/scale-unstreaming.yml`), which rewrites the snapshot and `public/api.json` together and refuses suspiciously small payloads, so the site and public API never drift or empty out.
+- First-party providers live in `src/lib/catalog/zyraxon-provider.json` (id-keyed) and are merged back by the sync script after every upstream fetch. Never hand-edit the generated `snapshot.json`, `public/api.json`, `public/providers.json` or `public/models.json` to add a first-party entry — edit the overlay and re-run `npm run sync:catalog`.

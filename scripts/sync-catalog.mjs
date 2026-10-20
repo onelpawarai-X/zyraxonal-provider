@@ -21,6 +21,11 @@ const API = 'public/api.json'
 const META = 'public/catalog-meta.json'
 const LOGOS_DIR = 'public/logos'
 
+// First-party providers that must survive every upstream refresh. Upstream
+// models.dev knows nothing about them, so they are merged back in after the
+// fetch, not fetched.
+const FIRST_PARTY = JSON.parse(await readFile('src/lib/catalog/zyraxon-provider.json', 'utf8'))
+
 console.log('Fetching upstream catalog from:', SOURCE)
 const res = await fetch(SOURCE, { headers: { 'user-agent': 'zyraxon-ai-sync' } })
 if (!res.ok) throw new Error(`Upstream fetch failed: ${res.status}`)
@@ -34,6 +39,12 @@ for (const id of providerIds.sort()) {
   const p = upstream[id]
   if (!p || typeof p !== 'object' || typeof p.name !== 'string' || typeof p.models !== 'object') continue
   providers[id] = p
+}
+
+// Merge the first-party providers back in, so a refresh can never drop them.
+for (const [id, p] of Object.entries(FIRST_PARTY)) {
+  providers[id] = p
+  console.log(`Merged first-party provider: ${id} (${Object.keys(p.models).length} models)`)
 }
 
 // Merge unique models for snapshot
@@ -53,21 +64,25 @@ await mkdir(LOGOS_DIR, { recursive: true })
 
 // 1. models.json (models.dev-এর হুবহু গঠন ও ডেটা)
 console.log('Fetching canonical models.json from:', MODELS_SOURCE)
+const firstPartyModels = Object.fromEntries(
+  Object.values(FIRST_PARTY).flatMap((p) => Object.entries(p.models).map(([id, m]) => [id, m]))
+)
+const withFirstParty = (m) => ({ ...m, ...firstPartyModels })
 try {
   const r = await fetch(MODELS_SOURCE, { headers: { 'user-agent': 'zyraxon-ai-sync' } })
   if (r.ok) {
     const m = await r.json()
     if (Object.keys(m).length > 100) {
-      await writeFile('public/models.json', JSON.stringify(m, null, 2))
-      console.log(`Saved public/models.json (${Object.keys(m).length} canonical models)`)
+      await writeFile('public/models.json', JSON.stringify(withFirstParty(m), null, 2))
+      console.log(`Saved public/models.json (${Object.keys(m).length} canonical models + ${Object.keys(firstPartyModels).length} first-party)`)
     }
   } else {
     // Fallback to internal merged catalog if upstream models.json is unavailable
-    await writeFile('public/models.json', JSON.stringify(models, null, 2))
+    await writeFile('public/models.json', JSON.stringify(withFirstParty(models), null, 2))
   }
 } catch (err) {
   console.warn('Failed to fetch upstream models.json, using fallback:', err.message)
-  await writeFile('public/models.json', JSON.stringify(models, null, 2))
+  await writeFile('public/models.json', JSON.stringify(withFirstParty(models), null, 2))
 }
 
 // 2. Provider Logos (e.g. openai.svg, google.svg, etc.)
