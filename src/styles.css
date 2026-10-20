@@ -95,6 +95,9 @@
 .identity-button:hover { color:var(--primary); background:transparent; }
 .lab-identity { display:flex; align-items:center; gap:8px; font-size:11px; white-space:nowrap; }
 .provider-logo { width:17px; height:17px; object-fit:contain; flex-shrink:0; }
+.first-party-badge { display:inline-block; margin-left:8px; padding:2px 7px; border-radius:999px; font:9px/1.5 var(--font-mono); letter-spacing:.08em; text-transform:uppercase; vertical-align:middle; color:#fff; background:linear-gradient(135deg,#2563eb,#7c3aed); }
+.data-row.row-first-party { background:linear-gradient(90deg,color-mix(in oklch,var(--primary) 5%,var(--background)),var(--background) 40%); }
+.data-row.row-first-party:hover { background:color-mix(in oklch,var(--primary) 9%,var(--background)); }
 .mono-value { font:11px var(--font-mono); color:var(--muted-foreground); }
 .count-link { font:11px var(--font-mono); text-decoration:underline; text-underline-offset:4px; color:var(--foreground); padding:0; height:auto; }
 .modalities { display:flex; gap:3px; }

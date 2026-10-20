@@ -2532,7 +2532,7 @@
     "npm": "@ai-sdk/openai-compatible",
     "api": "https://open.bigmodel.cn/api/paas/v4",
     "name": "Zhipu AI",
-    "doc": "https://docs.z.ai/guides/overview/pricing",
+    "doc": "https://docs.bigmodel.cn/cn/guide/start/pricing",
     "model_count": 17
   },
   "zhipuai-coding-plan": {
@@ -2545,5 +2545,16 @@
     "name": "Zhipu AI Coding Plan",
     "doc": "https://docs.bigmodel.cn/cn/coding-plan/overview",
     "model_count": 4
+  },
+  "zyraxon": {
+    "id": "zyraxon",
+    "name": "ZYRAXON",
+    "doc": "https://zyraxonai.lovable.app/docs/provider-overview",
+    "api": "https://zyraxonai.lovable.app/api/public/zyraxon/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "ZYRAXON_API_KEY"
+    ],
+    "model_count": 10
   }
 }

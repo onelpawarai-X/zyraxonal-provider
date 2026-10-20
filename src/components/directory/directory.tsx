@@ -173,6 +173,12 @@ export function Directory({ view }: { view: View }) {
     }
 
     return data.sort((a, b) => {
+      // ZYRAXON is our own provider; keep it pinned above the upstream list so
+      // the first-party endpoint is always the first thing a visitor sees.
+      if (view === 'providers') {
+        if (a.id === 'zyraxon') return -1
+        if (b.id === 'zyraxon') return 1
+      }
       const x = val(a)
       const y = val(b)
       const result = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y))
@@ -383,7 +389,7 @@ export function Directory({ view }: { view: View }) {
                 <div
                   key={row.id}
                   data-index={item.index}
-                  className={`data-row ${view === 'models' ? 'model-grid' : view === 'providers' ? 'provider-grid' : 'lab-grid'}`}
+                  className={`data-row ${view === 'models' ? 'model-grid' : view === 'providers' ? 'provider-grid' : 'lab-grid'}${view === 'providers' && row.id === 'zyraxon' ? ' row-first-party' : ''}`}
                   style={{ position: 'absolute', top: 0, left: 0, width: '100%', transform: `translateY(${item.start - 42}px)` }}
                   role="row"
                 >
@@ -396,6 +402,9 @@ export function Directory({ view }: { view: View }) {
                           </span>
                         )}
                         {row.name}
+                        {view === 'providers' && row.id === 'zyraxon' && (
+                          <span className="first-party-badge">First-party</span>
+                        )}
                       </div>
                       <div className="model-id">{row.id}</div>
                     </Button>
@@ -557,13 +566,19 @@ export function Directory({ view }: { view: View }) {
 
       <Dialog open={!!selectedProvider || !!selectedLab} onOpenChange={open => { if (!open) { setSelectedProvider(null); setSelectedLab(null) } }}>
         <DialogContent className="detail-dialog">
-          <DialogTitle>{selectedProvider?.name ?? selectedLab?.name}</DialogTitle>
+          <DialogTitle>
+            <span className="detail-title">
+              {selectedProvider && <Logo id={selectedProvider.id} />}
+              {selectedProvider?.name ?? selectedLab?.name}
+            </span>
+          </DialogTitle>
           <DialogDescription>
             {selectedProvider ? `${Object.keys(selectedProvider.models).length} provider models` : `${selectedLab?.models.length ?? 0} models in this lab`}
           </DialogDescription>
           {selectedProvider && (
             <dl className="about-list">
               <dt>Provider ID</dt><dd className="font-mono">{selectedProvider.id}</dd>
+              <dt>API endpoint</dt><dd className="font-mono break-all">{selectedProvider.api ?? '—'}</dd>
               <dt>SDK package</dt><dd className="font-mono break-all">{selectedProvider.npm ?? '—'}</dd>
               <dt>Environment</dt><dd className="font-mono break-all">{selectedProvider.env?.join(', ') ?? '—'}</dd>
               <dt>Documentation</dt><dd><a href={selectedProvider.doc} target="_blank" rel="noreferrer">Open documentation ↗</a></dd>

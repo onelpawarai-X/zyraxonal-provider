@@ -1,0 +1,371 @@
+{
+  "zyraxon": {
+    "id": "zyraxon",
+    "name": "ZYRAXON",
+    "doc": "https://zyraxonai.lovable.app/docs/provider-overview",
+    "api": "https://zyraxonai.lovable.app/api/public/zyraxon/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "ZYRAXON_API_KEY"
+    ],
+    "models": {
+      "zyraxon-apex": {
+        "id": "zyraxon-apex",
+        "name": "ZYRAXON Apex",
+        "description": "Flagship reasoning at a million tokens — deep reasoning with image, video and PDF understanding.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-matrix": {
+        "id": "zyraxon-matrix",
+        "name": "ZYRAXON Matrix",
+        "description": "Sees images and reasons at scale — vision plus text over a million-token context.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-pulse": {
+        "id": "zyraxon-pulse",
+        "name": "ZYRAXON Pulse",
+        "description": "Built for speed on long inputs — low latency with a 262K context and matching output.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-titan": {
+        "id": "zyraxon-titan",
+        "name": "ZYRAXON Titan",
+        "description": "The long-output workhorse — a million-token context with 512K output and image plus video input.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1000000,
+          "output": 512000
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-neural": {
+        "id": "zyraxon-neural",
+        "name": "ZYRAXON Neural",
+        "description": "Balanced general intelligence — reasoning across a 200K context with 32K output.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-codex": {
+        "id": "zyraxon-codex",
+        "name": "ZYRAXON Codex",
+        "description": "Writes and repairs code — code plus vision over a 200K context.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-visionary": {
+        "id": "zyraxon-visionary",
+        "name": "ZYRAXON Visionary",
+        "description": "Reads images, video and documents — multimodal understanding over a 200K context.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-cyber": {
+        "id": "zyraxon-cyber",
+        "name": "ZYRAXON Cyber",
+        "description": "Every input modality in one model — text, image, audio and video over a 200K context.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-quantum": {
+        "id": "zyraxon-quantum",
+        "name": "ZYRAXON Quantum",
+        "description": "Million-token document reasoning — vision plus text with 131K output.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1000000,
+          "output": 131072
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "zyraxon-genesis": {
+        "id": "zyraxon-genesis",
+        "name": "ZYRAXON Genesis",
+        "description": "Fresh from the lab — the latest experimental reasoning with every input modality.",
+        "family": "zyraxon",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
+        }
+      }
+    }
+  }
+}
