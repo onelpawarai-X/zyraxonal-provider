@@ -481,7 +481,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 61
+    "model_count": 72
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 343
+    "model_count": 344
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -800,7 +800,7 @@
     "npm": "@ai-sdk/google",
     "name": "Google",
     "doc": "https://ai.google.dev/gemini-api/docs/models",
-    "model_count": 40
+    "model_count": 41
   },
   "google-vertex": {
     "id": "google-vertex",
@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 397
+    "model_count": 396
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1134,6 +1134,17 @@
     "doc": "https://docs.getlilac.com/inference/models",
     "model_count": 4
   },
+  "liquid": {
+    "id": "liquid",
+    "env": [
+      "LIQUID_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://router.inference.ai.exchange/v1",
+    "name": "Liquid Inference",
+    "doc": "https://inference.ai.exchange/docs",
+    "model_count": 1
+  },
   "llama": {
     "id": "llama",
     "env": [
@@ -1165,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 438
+    "model_count": 436
   },
   "llmtech": {
     "id": "llmtech",
@@ -1583,7 +1594,7 @@
     "api": "https://ollama.com/v1",
     "name": "Ollama Cloud",
     "doc": "https://docs.ollama.com/cloud",
-    "model_count": 28
+    "model_count": 29
   },
   "openai": {
     "id": "openai",
@@ -1920,7 +1931,7 @@
     "api": "https://api.scaleway.ai/v1",
     "name": "Scaleway",
     "doc": "https://www.scaleway.com/en/docs/generative-apis/",
-    "model_count": 18
+    "model_count": 16
   },
   "scnet-token-plan": {
     "id": "scnet-token-plan",
@@ -2086,7 +2097,7 @@
     "api": "https://api.synthetic.new/openai/v1",
     "name": "Synthetic",
     "doc": "https://synthetic.new/pricing",
-    "model_count": 11
+    "model_count": 12
   },
   "tempr": {
     "id": "tempr",
@@ -2292,7 +2303,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 415
+    "model_count": 420
   },
   "vispark": {
     "id": "vispark",
