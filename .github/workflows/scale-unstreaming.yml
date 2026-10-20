@@ -1,9 +1,9 @@
-name: Sync Upstream Catalog & Auto-Merge PR
+name: Scale & Refresh Provider Endpoints (PR & Auto-Merge)
 
 on:
   schedule:
-    - cron: "0 */4 * * *" # প্রতি ৪ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে স্ক্যান হবে
-  workflow_dispatch:      # Actions ট্যাব থেকে যেকোনো সময় ম্যানুয়ালি রান করার জন্য
+    - cron: "0 */4 * * *" # প্রতি ৪ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে চলবে
+  workflow_dispatch:      # Actions ট্যাব থেকে যেকোনো সময় ১-ক্লিকে রান করার সুবিধা
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  sync-and-pr:
+  refresh-and-sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,44 +27,110 @@ jobs:
         with:
           node-version: 22
 
-      - name: Scan & sync models.dev catalog
+      # ১. সব ফাইলের পুরোনো URL গুলোকে যাচাইকৃত নতুন URL দিয়ে প্রতিস্থাপন
+      - name: Search & Replace Old URLs across all files
+        run: |
+          node -e '
+          import fs from "node:fs";
+
+          const REPLACEMENTS = [
+            // OpenCode API ও Docs
+            { from: "https://opencode.ai/zen/v1", to: "https://opencode.ai/inference/openai/v1" },
+            { from: "https://opencode.ai/docs/zen", to: "https://opencode.ai/v2/docs/console/models/" },
+            { from: "\"name\": \"OpenCode Zen\"", to: "\"name\": \"OpenCode\"" },
+
+            // OpenCode Go API ও Docs
+            { from: "https://opencode.ai/zen/go/v1", to: "https://opencode.ai/inference/go/openai/v1" },
+            { from: "https://opencode.ai/docs/go", to: "https://opencode.ai/v2/docs/console/go/" },
+
+            // Standard Compute Docs
+            { from: "https://standardcompute.com/models", to: "https://docs.standardcompute.com/models" }
+          ];
+
+          const TARGET_FILES = [
+            "src/lib/catalog/snapshot.json",
+            "public/api.json",
+            "public/providers.json",
+            "public/models.json"
+          ];
+
+          console.log("Scanning and refreshing endpoints across all catalog files...");
+
+          for (const file of TARGET_FILES) {
+            if (!fs.existsSync(file)) continue;
+            let content = fs.readFileSync(file, "utf8");
+            let modified = false;
+
+            for (const { from, to } of REPLACEMENTS) {
+              if (content.includes(from)) {
+                content = content.replaceAll(from, to);
+                modified = true;
+                console.log(`[REFRESHED] ${from} -> ${to} in ${file}`);
+              }
+            }
+
+            if (modified) {
+              fs.writeFileSync(file, content, "utf8");
+              console.log(`Successfully updated: ${file}`);
+            }
+          }
+          '
+
+      # ২. লেটেস্ট মডেল, নতুন প্রোভাইডার ও লোগো সিঙ্ক করা
+      - name: Sync upstream catalog, models & provider logos
+        env:
+          CATALOG_SOURCE: "https://models.dev/api.json"
         run: |
           node scripts/sync-catalog.mjs
 
-      - name: Check for changes & create/merge PR
+      # ৩. ব্রাঞ্চ তৈরি, পুশ, PR ক্রিয়েট এবং স্বয়ংক্রিয়ভাবে Merge করা
+      - name: Create Branch, Push, Open PR & Auto-Merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "zyraxon-sync-bot"
           git config user.email "sayidilxs@gmail.com"
 
-          # পরিবর্তনের ফাইলগুলো স্টেজিংয়ে যুক্ত করা
-          git add src/lib/catalog/snapshot.json public/api.json public/models.json public/providers.json public/catalog-meta.json public/logos/
+          # পরিবর্তনের ফাইলসমূহ স্টেজিংয়ে যুক্ত করা
+          git add src/lib/catalog/snapshot.json \
+                  public/api.json \
+                  public/models.json \
+                  public/providers.json \
+                  public/catalog-meta.json \
+                  public/logos/
 
-          # কোনো পরিবর্তন না থাকলে প্রস্থান করা
+          # কোনো পরিবর্তন না থাকলে প্রস্থান
           if git diff --cached --quiet; then
-            echo "No changes found. Upstream catalog is up-to-date."
+            echo "All endpoints and catalog data are 100% up to date. No PR needed."
             exit 0
           fi
 
+          # ১. নতুন টাইমস্ট্যাম্পযুক্ত ব্রাঞ্চ তৈরি করা
           TIMESTAMP=$(date +%s)
           BRANCH_NAME="sync/catalog-${TIMESTAMP}"
 
-          echo "Changes detected! Creating branch: $BRANCH_NAME"
+          echo "Changes detected! Creating sync branch: $BRANCH_NAME"
           git checkout -b "$BRANCH_NAME"
-          git commit -m "chore(catalog): automated sync with upstream models.dev"
+          git commit -m "chore(catalog): refresh provider endpoints and upstream models"
           git push origin "$BRANCH_NAME"
 
-          echo "Creating Pull Request..."
+          # ২. স্বয়ংক্রিয় Pull Request তৈরি করা
+          echo "Opening Pull Request..."
           PR_URL=$(gh pr create \
             --base main \
             --head "$BRANCH_NAME" \
-            --title "chore(catalog): auto-sync latest models & providers" \
-            --body "Automated sync from models.dev upstream. Contains latest model additions, removals, and provider logos." \
+            --title "chore(catalog): auto-refresh endpoints & models (${TIMESTAMP})" \
+            --body "Automated sync bot detected changes:
+            - Refreshed provider endpoints (OpenCode, OpenCode Go, Standard Compute)
+            - Synced latest upstream models, providers, and logos
+            - Auto-merging into main branch." \
             --label "automated-sync")
 
-          echo "PR created at: $PR_URL"
-          echo "Auto-merging PR into main..."
+          echo "Pull Request successfully created at: $PR_URL"
+
+          # ৩. সরাসরি Squash Merge করে দেওয়া এবং ব্রাঞ্চ ডিলিট করা
+          echo "Auto-merging Pull Request into main..."
           gh pr merge "$PR_URL" --squash --delete-branch --admin || gh pr merge "$PR_URL" --squash --delete-branch
 
-          echo "Successfully merged upstream updates into main!"
+          echo "PR successfully merged into main! Branch $BRANCH_NAME deleted."
+
