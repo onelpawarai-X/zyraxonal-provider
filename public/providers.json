@@ -591,7 +591,7 @@
     "npm": "@ai-sdk/deepinfra",
     "name": "Deep Infra",
     "doc": "https://deepinfra.com/models",
-    "model_count": 76
+    "model_count": 77
   },
   "deepseek": {
     "id": "deepseek",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 353
+    "model_count": 357
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -712,7 +712,7 @@
     "api": "https://go.fastrouter.ai/api/v1",
     "name": "FastRouter",
     "doc": "https://fastrouter.ai/models",
-    "model_count": 47
+    "model_count": 45
   },
   "fireworks-ai": {
     "id": "fireworks-ai",
@@ -889,7 +889,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 83
+    "model_count": 84
   },
   "hyper": {
     "id": "hyper",
@@ -944,7 +944,7 @@
     "api": "https://api.inceptron.io/v1",
     "name": "Inceptron",
     "doc": "https://docs.inceptron.io",
-    "model_count": 4
+    "model_count": 6
   },
   "inco": {
     "id": "inco",
@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 396
+    "model_count": 397
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1176,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 432
+    "model_count": 433
   },
   "llmtech": {
     "id": "llmtech",
@@ -1472,7 +1472,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 618
+    "model_count": 624
   },
   "nearai": {
     "id": "nearai",
@@ -1615,7 +1615,7 @@
     "api": "https://opencode.ai/inference/openai/v1",
     "name": "OpenCode",
     "doc": "https://opencode.ai/v2/docs/console/models/",
-    "model_count": 129
+    "model_count": 130
   },
   "opencode-go": {
     "id": "opencode-go",
@@ -1648,7 +1648,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 389
+    "model_count": 390
   },
   "opper": {
     "id": "opper",
@@ -1724,7 +1724,7 @@
     "api": "https://api.perplexity.ai/v1",
     "name": "Perplexity Agent",
     "doc": "https://docs.perplexity.ai/docs/agent-api/models",
-    "model_count": 46
+    "model_count": 47
   },
   "pioneer": {
     "id": "pioneer",
@@ -1930,7 +1930,7 @@
     "api": "https://api.scaleway.ai/v1",
     "name": "Scaleway",
     "doc": "https://www.scaleway.com/en/docs/generative-apis/",
-    "model_count": 16
+    "model_count": 17
   },
   "scnet-token-plan": {
     "id": "scnet-token-plan",
@@ -2302,7 +2302,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 420
+    "model_count": 421
   },
   "vispark": {
     "id": "vispark",
@@ -2521,7 +2521,7 @@
     "api": "https://zenmux.ai/api/v1",
     "name": "ZenMux",
     "doc": "https://docs.zenmux.ai",
-    "model_count": 130
+    "model_count": 137
   },
   "zhipuai": {
     "id": "zhipuai",
