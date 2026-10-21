@@ -106,7 +106,7 @@
     "npm": "@aihubmix/ai-sdk-provider",
     "name": "AIHubMix",
     "doc": "https://docs.aihubmix.com",
-    "model_count": 153
+    "model_count": 155
   },
   "aimlapi": {
     "id": "aimlapi",
@@ -251,7 +251,7 @@
     "api": "https://developer.amd.com.cn/radeon/api/v1",
     "name": "AMD",
     "doc": "https://developer.amd.com.cn/radeon/tokenfactory",
-    "model_count": 6
+    "model_count": 11
   },
   "anthropic": {
     "id": "anthropic",
@@ -283,7 +283,7 @@
     "api": "https://api.arcee.ai/api/v1",
     "name": "Arcee",
     "doc": "https://docs.arcee.ai",
-    "model_count": 7
+    "model_count": 11
   },
   "atomic-chat": {
     "id": "atomic-chat",
@@ -547,7 +547,7 @@
     "api": "https://api.crossmodel.ai/v1",
     "name": "CrossModel",
     "doc": "https://www.crossmodel.ai/docs",
-    "model_count": 70
+    "model_count": 68
   },
   "crusoe": {
     "id": "crusoe",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 344
+    "model_count": 353
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1176,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 428
+    "model_count": 432
   },
   "llmtech": {
     "id": "llmtech",
@@ -1220,7 +1220,7 @@
     "api": "https://api.longcat.chat/openai",
     "name": "LongCat",
     "doc": "https://longcat.chat/platform/docs/",
-    "model_count": 1
+    "model_count": 2
   },
   "lowrouter": {
     "id": "lowrouter",
@@ -1286,7 +1286,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 211
+    "model_count": 212
   },
   "meta": {
     "id": "meta",
@@ -1384,7 +1384,7 @@
     "api": "https://inference.us-west.modal.direct/v1",
     "name": "Modal",
     "doc": "https://modal.com/docs/guide/endpoints",
-    "model_count": 4
+    "model_count": 8
   },
   "model-oracle-ai": {
     "id": "model-oracle-ai",
@@ -1472,7 +1472,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 617
+    "model_count": 618
   },
   "nearai": {
     "id": "nearai",
@@ -1724,7 +1724,7 @@
     "api": "https://api.perplexity.ai/v1",
     "name": "Perplexity Agent",
     "doc": "https://docs.perplexity.ai/docs/agent-api/models",
-    "model_count": 22
+    "model_count": 46
   },
   "pioneer": {
     "id": "pioneer",
@@ -1768,7 +1768,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 68
+    "model_count": 69
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -2173,7 +2173,7 @@
     "api": "https://tinker.thinkingmachines.dev/services/tinker-prod/anthropic/api/v1",
     "name": "Thinking Machines",
     "doc": "https://tinker-docs.thinkingmachines.ai/tinker/compatible-apis/anthropic/",
-    "model_count": 2
+    "model_count": 38
   },
   "tinfoil": {
     "id": "tinfoil",
