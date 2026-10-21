@@ -536,7 +536,7 @@
     "api": "https://api.cortecs.ai/v1",
     "name": "Cortecs",
     "doc": "https://api.cortecs.ai/v1/models",
-    "model_count": 106
+    "model_count": 105
   },
   "crossmodel": {
     "id": "crossmodel",
@@ -613,7 +613,7 @@
     "api": "https://inference.do-ai.run/v1",
     "name": "DigitalOcean",
     "doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/",
-    "model_count": 103
+    "model_count": 104
   },
   "dinference": {
     "id": "dinference",
@@ -889,7 +889,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 82
+    "model_count": 83
   },
   "hyper": {
     "id": "hyper",
@@ -1165,7 +1165,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 212
+    "model_count": 215
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -2162,7 +2162,7 @@
     "api": "https://api.thegrid.ai/v1",
     "name": "The Grid AI",
     "doc": "https://thegrid.ai/docs",
-    "model_count": 16
+    "model_count": 17
   },
   "thinkingmachines": {
     "id": "thinkingmachines",
@@ -2238,7 +2238,7 @@
     "api": "https://api.code.umans.ai/v1",
     "name": "Umans AI",
     "doc": "https://app.umans.ai/offers/code/docs/orgs",
-    "model_count": 7
+    "model_count": 8
   },
   "umans-ai-coding-plan": {
     "id": "umans-ai-coding-plan",
@@ -2249,7 +2249,7 @@
     "api": "https://api.code.umans.ai/v1",
     "name": "Umans AI Coding Plan",
     "doc": "https://app.umans.ai/offers/code/docs",
-    "model_count": 8
+    "model_count": 9
   },
   "unorouter": {
     "id": "unorouter",
