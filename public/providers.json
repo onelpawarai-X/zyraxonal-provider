@@ -481,7 +481,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 72
+    "model_count": 73
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -613,7 +613,7 @@
     "api": "https://inference.do-ai.run/v1",
     "name": "DigitalOcean",
     "doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/",
-    "model_count": 104
+    "model_count": 105
   },
   "dinference": {
     "id": "dinference",
@@ -723,7 +723,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://fireworks.ai/docs/",
-    "model_count": 26
+    "model_count": 27
   },
   "freemodel": {
     "id": "freemodel",
@@ -800,7 +800,7 @@
     "npm": "@ai-sdk/google",
     "name": "Google",
     "doc": "https://ai.google.dev/gemini-api/docs/models",
-    "model_count": 41
+    "model_count": 38
   },
   "google-vertex": {
     "id": "google-vertex",
@@ -2302,7 +2302,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 421
+    "model_count": 419
   },
   "vispark": {
     "id": "vispark",
