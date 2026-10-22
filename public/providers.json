@@ -712,7 +712,7 @@
     "api": "https://go.fastrouter.ai/api/v1",
     "name": "FastRouter",
     "doc": "https://fastrouter.ai/models",
-    "model_count": 45
+    "model_count": 44
   },
   "fireworks-ai": {
     "id": "fireworks-ai",
@@ -745,7 +745,7 @@
     "api": "https://api.friendli.ai/serverless/v1",
     "name": "Friendli",
     "doc": "https://friendli.ai/docs/guides/serverless_endpoints/introduction",
-    "model_count": 7
+    "model_count": 6
   },
   "frogbot": {
     "id": "frogbot",
@@ -1165,7 +1165,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 215
+    "model_count": 214
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1176,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 433
+    "model_count": 431
   },
   "llmtech": {
     "id": "llmtech",
@@ -1561,7 +1561,7 @@
     "api": "https://integrate.api.nvidia.com/v1",
     "name": "Nvidia",
     "doc": "https://docs.api.nvidia.com/nim/",
-    "model_count": 107
+    "model_count": 51
   },
   "oci": {
     "id": "oci",
