@@ -536,7 +536,7 @@
     "api": "https://api.cortecs.ai/v1",
     "name": "Cortecs",
     "doc": "https://api.cortecs.ai/v1/models",
-    "model_count": 105
+    "model_count": 106
   },
   "crossmodel": {
     "id": "crossmodel",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 359
+    "model_count": 360
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -723,7 +723,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://fireworks.ai/docs/",
-    "model_count": 24
+    "model_count": 26
   },
   "freemodel": {
     "id": "freemodel",
@@ -1176,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 431
+    "model_count": 433
   },
   "llmtech": {
     "id": "llmtech",
@@ -1626,7 +1626,7 @@
     "api": "https://opencode.ai/inference/go/openai/v1",
     "name": "OpenCode Go",
     "doc": "https://opencode.ai/v2/docs/console/go/",
-    "model_count": 33
+    "model_count": 34
   },
   "openreason": {
     "id": "openreason",
