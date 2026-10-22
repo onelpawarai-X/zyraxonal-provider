@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 357
+    "model_count": 359
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1286,7 +1286,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 212
+    "model_count": 211
   },
   "meta": {
     "id": "meta",
