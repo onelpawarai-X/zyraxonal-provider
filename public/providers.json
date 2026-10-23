@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 360
+    "model_count": 361
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 424
+    "model_count": 423
   },
   "llmtech": {
     "id": "llmtech",
@@ -1450,7 +1450,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 624
+    "model_count": 625
   },
   "nearai": {
     "id": "nearai",
@@ -1539,7 +1539,7 @@
     "api": "https://integrate.api.nvidia.com/v1",
     "name": "Nvidia",
     "doc": "https://docs.api.nvidia.com/nim/",
-    "model_count": 51
+    "model_count": 52
   },
   "oci": {
     "id": "oci",
@@ -2280,7 +2280,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 419
+    "model_count": 414
   },
   "vispark": {
     "id": "vispark",
