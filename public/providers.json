@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 361
+    "model_count": 371
   },
   "empiriolabs": {
     "id": "empiriolabs",
