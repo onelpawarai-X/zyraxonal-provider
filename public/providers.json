@@ -1055,7 +1055,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 398
+    "model_count": 396
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1430,6 +1430,28 @@
     "doc": "https://docs.morphllm.com/api-reference/introduction",
     "model_count": 3
   },
+  "munito": {
+    "id": "munito",
+    "env": [
+      "MUNITO_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://api.munito.ai/inference/v1",
+    "name": "Munito AI",
+    "doc": "https://docs.munito.ai/models",
+    "model_count": 5
+  },
+  "munito-eu": {
+    "id": "munito-eu",
+    "env": [
+      "MUNITO_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://api.eu.munito.ai/inference/v1",
+    "name": "Munito AI (EU)",
+    "doc": "https://docs.munito.ai/regions",
+    "model_count": 4
+  },
   "nan": {
     "id": "nan",
     "env": [
@@ -1604,7 +1626,7 @@
     "api": "https://opencode.ai/inference/go/openai/v1",
     "name": "OpenCode Go",
     "doc": "https://opencode.ai/v2/docs/console/go/",
-    "model_count": 36
+    "model_count": 37
   },
   "openreason": {
     "id": "openreason",
@@ -1626,7 +1648,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 391
+    "model_count": 389
   },
   "opper": {
     "id": "opper",
