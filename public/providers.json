@@ -745,7 +745,7 @@
     "api": "https://api.friendli.ai/serverless/v1",
     "name": "Friendli",
     "doc": "https://friendli.ai/docs/guides/serverless_endpoints/introduction",
-    "model_count": 6
+    "model_count": 5
   },
   "frogbot": {
     "id": "frogbot",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 426
+    "model_count": 425
   },
   "llmtech": {
     "id": "llmtech",
