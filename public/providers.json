@@ -613,7 +613,7 @@
     "api": "https://inference.do-ai.run/v1",
     "name": "DigitalOcean",
     "doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/",
-    "model_count": 82
+    "model_count": 83
   },
   "dinference": {
     "id": "dinference",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 425
+    "model_count": 426
   },
   "llmtech": {
     "id": "llmtech",
@@ -1450,7 +1450,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 625
+    "model_count": 630
   },
   "nearai": {
     "id": "nearai",
@@ -1746,7 +1746,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 69
+    "model_count": 70
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -1822,7 +1822,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://requesty.ai/solution/llm-routing/models",
-    "model_count": 180
+    "model_count": 182
   },
   "routing-run": {
     "id": "routing-run",
