@@ -1604,7 +1604,7 @@
     "api": "https://opencode.ai/inference/go/openai/v1",
     "name": "OpenCode Go",
     "doc": "https://opencode.ai/v2/docs/console/go/",
-    "model_count": 35
+    "model_count": 36
   },
   "openreason": {
     "id": "openreason",
