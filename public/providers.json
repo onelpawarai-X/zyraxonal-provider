@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 426
+    "model_count": 430
   },
   "llmtech": {
     "id": "llmtech",
