@@ -117,7 +117,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 177
+    "model_count": 178
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -1055,7 +1055,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 396
+    "model_count": 397
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1472,7 +1472,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 630
+    "model_count": 658
   },
   "nearai": {
     "id": "nearai",
@@ -1494,7 +1494,7 @@
     "api": "https://api.tokenfactory.nebius.com/v1",
     "name": "Nebius Token Factory",
     "doc": "https://docs.tokenfactory.nebius.com/",
-    "model_count": 24
+    "model_count": 26
   },
   "neon": {
     "id": "neon",
@@ -1550,7 +1550,7 @@
     "api": "https://api.novita.ai/openai",
     "name": "Novita AI",
     "doc": "https://novita.ai/docs/guides/introduction",
-    "model_count": 87
+    "model_count": 89
   },
   "nvidia": {
     "id": "nvidia",
@@ -1648,7 +1648,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 389
+    "model_count": 390
   },
   "opper": {
     "id": "opper",
