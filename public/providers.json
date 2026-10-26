@@ -117,7 +117,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 171
+    "model_count": 172
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -316,7 +316,7 @@
     "npm": "@ai-sdk/azure",
     "name": "Azure",
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
-    "model_count": 95
+    "model_count": 96
   },
   "azure-cognitive-services": {
     "id": "azure-cognitive-services",
@@ -327,7 +327,7 @@
     "npm": "@ai-sdk/azure",
     "name": "Azure Cognitive Services",
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
-    "model_count": 95
+    "model_count": 96
   },
   "bailing": {
     "id": "bailing",
@@ -514,7 +514,7 @@
     "api": "https://api.commandcode.ai/provider/v1",
     "name": "CommandCode",
     "doc": "https://commandcode.ai/docs/provider",
-    "model_count": 71
+    "model_count": 72
   },
   "coralbricks": {
     "id": "coralbricks",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 369
+    "model_count": 370
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -767,7 +767,7 @@
     "api": "https://api.githubcopilot.com",
     "name": "GitHub Copilot",
     "doc": "https://docs.github.com/en/copilot",
-    "model_count": 35
+    "model_count": 36
   },
   "gitlab": {
     "id": "gitlab",
@@ -889,7 +889,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 81
+    "model_count": 82
   },
   "hyper": {
     "id": "hyper",
@@ -1143,7 +1143,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 207
+    "model_count": 208
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 430
+    "model_count": 432
   },
   "llmtech": {
     "id": "llmtech",
@@ -1209,7 +1209,7 @@
     "api": "https://api.lowrouter.ai/v1",
     "name": "LowRouter",
     "doc": "https://lowrouter.ai/docs/models/available",
-    "model_count": 31
+    "model_count": 32
   },
   "lucidquery": {
     "id": "lucidquery",
@@ -1264,7 +1264,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 201
+    "model_count": 202
   },
   "meta": {
     "id": "meta",
@@ -1472,7 +1472,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 649
+    "model_count": 650
   },
   "nearai": {
     "id": "nearai",
@@ -1483,7 +1483,7 @@
     "api": "https://cloud-api.near.ai/v1",
     "name": "NEAR AI Cloud",
     "doc": "https://docs.near.ai/",
-    "model_count": 56
+    "model_count": 57
   },
   "nebius": {
     "id": "nebius",
@@ -1604,7 +1604,7 @@
     "npm": "@ai-sdk/openai",
     "name": "OpenAI",
     "doc": "https://platform.openai.com/docs/models",
-    "model_count": 51
+    "model_count": 52
   },
   "opencode": {
     "id": "opencode",
@@ -1648,7 +1648,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 389
+    "model_count": 390
   },
   "opper": {
     "id": "opper",
@@ -1844,7 +1844,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://requesty.ai/solution/llm-routing/models",
-    "model_count": 183
+    "model_count": 185
   },
   "routing-run": {
     "id": "routing-run",
@@ -2302,7 +2302,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 416
+    "model_count": 418
   },
   "vispark": {
     "id": "vispark",
