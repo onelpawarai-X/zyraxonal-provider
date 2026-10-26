@@ -96,7 +96,7 @@
     "api": "https://api.aiand.com/v1",
     "name": "ai&",
     "doc": "https://docs.aiand.com/",
-    "model_count": 13
+    "model_count": 10
   },
   "aihubmix": {
     "id": "aihubmix",
@@ -117,7 +117,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 178
+    "model_count": 171
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -425,7 +425,7 @@
     "api": "https://llm.chutes.ai/v1",
     "name": "Chutes",
     "doc": "https://llm.chutes.ai/v1/models",
-    "model_count": 16
+    "model_count": 17
   },
   "clarifai": {
     "id": "clarifai",
@@ -1055,7 +1055,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 397
+    "model_count": 396
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1648,7 +1648,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 390
+    "model_count": 389
   },
   "opper": {
     "id": "opper",
