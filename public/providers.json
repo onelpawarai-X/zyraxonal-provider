@@ -229,7 +229,7 @@
     "npm": "@ai-sdk/amazon-bedrock",
     "name": "Amazon Bedrock",
     "doc": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-    "model_count": 199
+    "model_count": 200
   },
   "ambient": {
     "id": "ambient",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 372
+    "model_count": 369
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -777,7 +777,7 @@
     "npm": "gitlab-ai-provider",
     "name": "GitLab Duo",
     "doc": "https://docs.gitlab.com/user/duo_agent_platform/",
-    "model_count": 30
+    "model_count": 31
   },
   "gmicloud": {
     "id": "gmicloud",
@@ -1428,7 +1428,7 @@
     "api": "https://api.morphllm.com/v1",
     "name": "Morph",
     "doc": "https://docs.morphllm.com/api-reference/introduction",
-    "model_count": 3
+    "model_count": 11
   },
   "munito": {
     "id": "munito",
@@ -1483,7 +1483,7 @@
     "api": "https://cloud-api.near.ai/v1",
     "name": "NEAR AI Cloud",
     "doc": "https://docs.near.ai/",
-    "model_count": 57
+    "model_count": 56
   },
   "nebius": {
     "id": "nebius",
@@ -1844,7 +1844,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://requesty.ai/solution/llm-routing/models",
-    "model_count": 182
+    "model_count": 183
   },
   "routing-run": {
     "id": "routing-run",
