@@ -1055,7 +1055,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 396
+    "model_count": 397
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1472,7 +1472,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 650
+    "model_count": 647
   },
   "nearai": {
     "id": "nearai",
@@ -1506,7 +1506,7 @@
     "api": "${NEON_AI_GATEWAY_BASE_URL}/v1",
     "name": "Neon",
     "doc": "https://neon.com/docs",
-    "model_count": 57
+    "model_count": 58
   },
   "neosmith": {
     "id": "neosmith",
@@ -2292,7 +2292,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 128
+    "model_count": 129
   },
   "vercel": {
     "id": "vercel",
