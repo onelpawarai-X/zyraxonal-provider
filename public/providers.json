@@ -8,7 +8,7 @@
     "api": "https://api.302.ai/v1",
     "name": "302.AI",
     "doc": "https://doc.302.ai",
-    "model_count": 125
+    "model_count": 126
   },
   "abacus": {
     "id": "abacus",
@@ -536,7 +536,7 @@
     "api": "https://api.cortecs.ai/v1",
     "name": "Cortecs",
     "doc": "https://api.cortecs.ai/v1/models",
-    "model_count": 107
+    "model_count": 108
   },
   "crossmodel": {
     "id": "crossmodel",
@@ -1055,7 +1055,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 396
+    "model_count": 397
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1143,7 +1143,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 208
+    "model_count": 207
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1648,7 +1648,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 389
+    "model_count": 390
   },
   "opper": {
     "id": "opper",
@@ -2292,7 +2292,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 129
+    "model_count": 130
   },
   "vercel": {
     "id": "vercel",
