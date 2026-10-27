@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 370
+    "model_count": 371
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -679,7 +679,7 @@
     "api": "https://api.empiriolabs.ai/v1",
     "name": "EmpirioLabs AI",
     "doc": "https://docs.empiriolabs.ai",
-    "model_count": 63
+    "model_count": 62
   },
   "engy": {
     "id": "engy",
@@ -1472,7 +1472,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 647
+    "model_count": 648
   },
   "nearai": {
     "id": "nearai",
