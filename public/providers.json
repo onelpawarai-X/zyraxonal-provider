@@ -229,7 +229,7 @@
     "npm": "@ai-sdk/amazon-bedrock",
     "name": "Amazon Bedrock",
     "doc": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-    "model_count": 200
+    "model_count": 203
   },
   "ambient": {
     "id": "ambient",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 371
+    "model_count": 368
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1143,7 +1143,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 205
+    "model_count": 203
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 421
+    "model_count": 419
   },
   "llmtech": {
     "id": "llmtech",
@@ -1396,6 +1396,17 @@
     "name": "ModelScope",
     "doc": "https://modelscope.cn/docs/model-service/API-Inference/intro",
     "model_count": 7
+  },
+  "modular": {
+    "id": "modular",
+    "env": [
+      "MODULAR_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://api.modular.com/v1",
+    "name": "Modular",
+    "doc": "https://docs.modular.com/models",
+    "model_count": 4
   },
   "moonshotai": {
     "id": "moonshotai",
@@ -2324,7 +2335,7 @@
     "api": "https://api.vivgrid.com/v1",
     "name": "Vivgrid",
     "doc": "https://docs.vivgrid.com/models",
-    "model_count": 37
+    "model_count": 38
   },
   "volcengine": {
     "id": "volcengine",
