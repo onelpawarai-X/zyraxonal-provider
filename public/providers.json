@@ -679,7 +679,7 @@
     "api": "https://api.empiriolabs.ai/v1",
     "name": "EmpirioLabs AI",
     "doc": "https://docs.empiriolabs.ai",
-    "model_count": 62
+    "model_count": 63
   },
   "engy": {
     "id": "engy",
@@ -1143,7 +1143,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 195
+    "model_count": 196
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 409
+    "model_count": 410
   },
   "llmtech": {
     "id": "llmtech",
@@ -1329,7 +1329,7 @@
     "npm": "@ai-sdk/mistral",
     "name": "Mistral",
     "doc": "https://docs.mistral.ai/getting-started/models/",
-    "model_count": 34
+    "model_count": 35
   },
   "mixlayer": {
     "id": "mixlayer",
@@ -1594,7 +1594,7 @@
     "api": "https://api.ofox.ai/v1",
     "name": "Ofox",
     "doc": "https://ofox.ai/docs",
-    "model_count": 148
+    "model_count": 150
   },
   "ollama-cloud": {
     "id": "ollama-cloud",
@@ -2313,7 +2313,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 417
+    "model_count": 418
   },
   "vispark": {
     "id": "vispark",
