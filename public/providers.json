@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://docs.edenai.co",
-    "model_count": 368
+    "model_count": 388
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1483,7 +1483,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 641
+    "model_count": 642
   },
   "nearai": {
     "id": "nearai",
@@ -2303,7 +2303,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 130
+    "model_count": 129
   },
   "vercel": {
     "id": "vercel",
