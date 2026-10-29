@@ -1143,7 +1143,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 196
+    "model_count": 199
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1264,7 +1264,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 202
+    "model_count": 203
   },
   "meta": {
     "id": "meta",
@@ -1483,7 +1483,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 641
+    "model_count": 640
   },
   "nearai": {
     "id": "nearai",
