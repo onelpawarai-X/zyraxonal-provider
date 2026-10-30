@@ -96,7 +96,7 @@
     "api": "https://api.aiand.com/v1",
     "name": "ai&",
     "doc": "https://docs.aiand.com/",
-    "model_count": 10
+    "model_count": 11
   },
   "aihubmix": {
     "id": "aihubmix",
@@ -1329,7 +1329,7 @@
     "npm": "@ai-sdk/mistral",
     "name": "Mistral",
     "doc": "https://docs.mistral.ai/getting-started/models/",
-    "model_count": 35
+    "model_count": 36
   },
   "mixlayer": {
     "id": "mixlayer",
@@ -1494,7 +1494,7 @@
     "api": "https://cloud-api.near.ai/v1",
     "name": "NEAR AI Cloud",
     "doc": "https://docs.near.ai/",
-    "model_count": 57
+    "model_count": 60
   },
   "nebius": {
     "id": "nebius",
@@ -2303,7 +2303,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 129
+    "model_count": 128
   },
   "vercel": {
     "id": "vercel",
