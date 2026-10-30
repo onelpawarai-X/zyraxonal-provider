@@ -869,6 +869,17 @@
     "doc": "https://experiments.hetzner.com/docs/inference",
     "model_count": 2
   },
+  "hopper": {
+    "id": "hopper",
+    "env": [
+      "HOPPER_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://api.withhopper.com/v1",
+    "name": "Hopper",
+    "doc": "https://withhopper.com/agents/deepseek-v4.1-flash-1017",
+    "model_count": 2
+  },
   "hpc-ai": {
     "id": "hpc-ai",
     "env": [
@@ -1055,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 383
+    "model_count": 384
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
