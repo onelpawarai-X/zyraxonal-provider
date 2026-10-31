@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 384
+    "model_count": 380
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1165,7 +1165,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://llmgateway.io/docs",
-    "model_count": 420
+    "model_count": 423
   },
   "llmtech": {
     "id": "llmtech",
@@ -1494,7 +1494,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 641
+    "model_count": 643
   },
   "nearai": {
     "id": "nearai",
@@ -1670,7 +1670,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 381
+    "model_count": 377
   },
   "opper": {
     "id": "opper",
