@@ -613,7 +613,7 @@
     "api": "https://inference.do-ai.run/v1",
     "name": "DigitalOcean",
     "doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/",
-    "model_count": 83
+    "model_count": 84
   },
   "dinference": {
     "id": "dinference",
@@ -2324,7 +2324,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 418
+    "model_count": 417
   },
   "vispark": {
     "id": "vispark",
@@ -2402,6 +2402,17 @@
     "name": "Wallaby",
     "doc": "https://wallabytoken.com/docs",
     "model_count": 1
+  },
+  "wally": {
+    "id": "wally",
+    "env": [
+      "WALLY_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://inference.runanywhere.ai/v1",
+    "name": "Wally",
+    "doc": "https://docs.runanywhere.ai/wally-cloud/api",
+    "model_count": 8
   },
   "wandb": {
     "id": "wandb",
