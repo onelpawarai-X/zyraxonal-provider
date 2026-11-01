@@ -1616,7 +1616,7 @@
     "api": "https://ollama.com/v1",
     "name": "Ollama Cloud",
     "doc": "https://docs.ollama.com/cloud",
-    "model_count": 23
+    "model_count": 25
   },
   "openai": {
     "id": "openai",
@@ -2007,7 +2007,7 @@
     "api": "https://api.siliconflow.cn/v1",
     "name": "SiliconFlow (China)",
     "doc": "https://cloud.siliconflow.com/models",
-    "model_count": 40
+    "model_count": 45
   },
   "snowflake-cortex": {
     "id": "snowflake-cortex",
