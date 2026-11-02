@@ -1494,7 +1494,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 643
+    "model_count": 642
   },
   "nearai": {
     "id": "nearai",
