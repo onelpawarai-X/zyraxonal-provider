@@ -3,7 +3,7 @@ name: Scale & Refresh Provider Endpoints (PR & Auto-Merge)
 on:
   schedule:
     - cron: "0 */4 * * *" # প্রতি ৪ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে চলবে
-  workflow_dispatch:      # Actions ট্যাব থেকে ম্যানুয়ালি ১-ক্লিকে রান করার সুবিধা
+  workflow_dispatch: # Actions ট্যাব থেকে ম্যানুয়ালি ১-ক্লিকে রান করার সুবিধা
 
 permissions:
   contents: write
@@ -12,6 +12,11 @@ permissions:
 concurrency:
   group: catalog-sync
   cancel-in-progress: false
+
+env:
+  # কোনো মান হার্ডকোড না রেখে Repository Variable দিয়ে ওভাররাইড করা যায়।
+  CATALOG_SOURCE: ${{ vars.CATALOG_SOURCE || 'https://models.dev/api.json' }}
+  NODE_VERSION: ${{ vars.NODE_VERSION || '22' }}
 
 jobs:
   refresh-and-sync:
@@ -25,74 +30,27 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
 
-      # ১. সব ফাইলের পুরোনো URL গুলোকে যাচাইকৃত নতুন URL দিয়ে প্রতিস্থাপন
-      - name: Search & Replace Old URLs across all files
-        run: |
-          node -e '
-          import fs from "node:fs";
-
-          const REPLACEMENTS = [
-            // OpenCode API ও Docs
-            { from: "https://opencode.ai/zen/v1", to: "https://opencode.ai/inference/openai/v1" },
-            { from: "https://opencode.ai/docs/zen", to: "https://opencode.ai/v2/docs/console/models/" },
-            { from: "\"name\": \"OpenCode Zen\"", to: "\"name\": \"OpenCode\"" },
-
-            // OpenCode Go API ও Docs
-            { from: "https://opencode.ai/zen/go/v1", to: "https://opencode.ai/inference/go/openai/v1" },
-            { from: "https://opencode.ai/docs/go", to: "https://opencode.ai/v2/docs/console/go/" },
-
-            // Standard Compute Docs
-            { from: "https://standardcompute.com/models", to: "https://docs.standardcompute.com/models" }
-          ];
-
-          const TARGET_FILES = [
-            "src/lib/catalog/snapshot.json",
-            "public/api.json",
-            "public/providers.json",
-            "public/models.json"
-          ];
-
-          console.log("Scanning and refreshing endpoints across all catalog files...");
-
-          for (const file of TARGET_FILES) {
-            if (!fs.existsSync(file)) continue;
-            let content = fs.readFileSync(file, "utf8");
-            let modified = false;
-
-            for (const { from, to } of REPLACEMENTS) {
-              if (content.includes(from)) {
-                content = content.replaceAll(from, to);
-                modified = true;
-                console.log(`[REFRESHED] ${from} -> ${to} in ${file}`);
-              }
-            }
-
-            if (modified) {
-              fs.writeFileSync(file, content, "utf8");
-              console.log(`Successfully updated: ${file}`);
-            }
-          }
-          '
-
-      # ২. লেটেস্ট মডেল, নতুন প্রোভাইডার ও লোগো সিঙ্ক করা
+      # ১. লেটেস্ট মডেল, নতুন প্রোভাইডার, লোগো ও যাচাইকৃত লিংক সিঙ্ক করা।
+      # লিংক সংশোধন src/lib/catalog/link-overrides.json থেকে sync script নিজেই প্রয়োগ করে,
+      # তাই জেনারেটেড ফাইলে হাত দেওয়ার দরকার নেই।
       - name: Sync upstream catalog, models & provider logos
-        env:
-          CATALOG_SOURCE: "https://models.dev/api.json"
-        run: |
-          node scripts/sync-catalog.mjs
+        run: node scripts/sync-catalog.mjs
 
-      # ৩. ব্রাঞ্চ তৈরি, পুশ, PR ক্রিয়েট এবং স্বয়ংক্রিয়ভাবে Merge করা
+      # ২. ব্রাঞ্চ তৈরি, পুশ, PR ক্রিয়েট এবং স্বয়ংক্রিয়ভাবে Merge করা
       - name: Create Branch, Push, Open PR & Auto-Merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "zyraxon-sync-bot"
-          git config user.email "sayidilxs@gmail.com"
+          # GITHUB_TOKEN দিয়ে করা PR অন্য workflow ট্রিগার করে না, তাই এখানেই merge করা হয়।
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # পরিবর্তনের ফাইলসমূহ স্টেজিংয়ে যুক্ত করা
+          # পরিবর্তনের ফাইলসমূহ স্টেজিংয়ে যুক্ত করা
           git add src/lib/catalog/snapshot.json \
+                  src/lib/catalog/link-overrides.json \
+                  src/lib/catalog/zyraxon-provider.json \
                   public/api.json \
                   public/models.json \
                   public/providers.json \
@@ -105,7 +63,7 @@ jobs:
             exit 0
           fi
 
-          # ১. নতুন টাইমস্ট্যাম্পযুক্ত ব্রাঞ্চ তৈরি করা
+          # নতুন টাইমস্ট্যাম্পযুক্ত ব্রাঞ্চ তৈরি করা
           TIMESTAMP=$(date +%s)
           BRANCH_NAME="sync/catalog-${TIMESTAMP}"
 
@@ -114,21 +72,27 @@ jobs:
           git commit -m "chore(catalog): refresh provider endpoints and upstream models"
           git push origin "$BRANCH_NAME"
 
-          # ২. স্বয়ংক্রিয় Pull Request তৈরি করা (লেবেল ছাড়াই, যাতে কোনো এরর না হয়)
+          # স্বয়ংক্রিয় Pull Request তৈরি করা (লেবেল ছাড়াই, যাতে কোনো এরর না হয়)
           echo "Opening Pull Request..."
           PR_URL=$(gh pr create \
             --base main \
             --head "$BRANCH_NAME" \
             --title "chore(catalog): auto-refresh endpoints & models (${TIMESTAMP})" \
             --body "Automated sync bot detected changes:
-            - Refreshed provider endpoints (OpenCode, OpenCode Go, Standard Compute)
+            - Refreshed provider endpoints via src/lib/catalog/link-overrides.json
             - Synced latest upstream models, providers, and logos
             - Auto-merging into main branch.")
 
           echo "Pull Request successfully created at: $PR_URL"
 
-          # ৩. সরাসরি Squash Merge করা এবং টেম্পোরারি ব্রাঞ্চ ডিলিট করা
+          # সরাসরি Squash Merge করা; required checks থাকলে auto-merge চালু করা
           echo "Auto-merging Pull Request into main..."
-          gh pr merge "$PR_URL" --squash --delete-branch || echo "PR created successfully. Manual merge fallback if branch protection applies."
+          if gh pr merge "$PR_URL" --squash --delete-branch; then
+            echo "Pull Request merged successfully."
+          elif gh pr merge "$PR_URL" --squash --delete-branch --auto; then
+            echo "Auto-merge enabled; the PR will merge once required checks pass."
+          else
+            echo "Could not merge automatically. Please merge $PR_URL manually."
+          fi
 
           echo "Sync workflow completed successfully!"
