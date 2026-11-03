@@ -77,13 +77,37 @@ into `snapshot.json`, `public/api.json`, `public/providers.json` and
 reads upstream, so the sync script re-merges this file on every run — the
 provider can never be dropped by a catalog refresh.
 
+## 🔗 Provider link corrections
+
+Upstream provider records go stale: docs move, a company rebrands, a host is
+retired. Instead of editing the generated files (which the next sync would
+overwrite), the official URLs are pinned in
+[`src/lib/catalog/link-overrides.json`](src/lib/catalog/link-overrides.json).
+The sync script re-applies this overlay after every upstream fetch, so a
+correction sticks.
+
+```json
+{
+  "openai": { "doc": "https://developers.openai.com/api/docs/models" },
+  "anthropic": { "doc": "https://platform.claude.com/docs/en/models/overview" }
+}
+```
+
+Keys are provider ids, values are the fields to override (`doc` and/or `api`).
+Run `npm run sync:catalog` after editing so the snapshot and public JSON files
+pick up the change.
+
 ## 🤝 Contributing: How to Add a Provider or Model
 
 We welcome community contributions from AI creators, labs, and hosting platforms! All valid pull requests that match our schema are automatically merged.
 
 ### 1. Adding a New Provider
 
-To register a new inference provider, open `src/lib/catalog/snapshot.json` and add your provider configuration under the `"providers"` object:
+Generated files (`src/lib/catalog/snapshot.json`, `public/api.json`,
+`public/providers.json`, `public/models.json`) are rebuilt by
+`scripts/sync-catalog.mjs` and must never be hand-edited. Add a first-party
+provider by editing [`src/lib/catalog/zyraxon-provider.json`](src/lib/catalog/zyraxon-provider.json)
+(id-keyed), then run `npm run sync:catalog`:
 
 ```json
 "your-provider-id": {

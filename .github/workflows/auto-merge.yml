@@ -12,41 +12,64 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: auto-merge-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+env:
+  # Repository Variable দিয়ে বদলানো যায়, কোনো মান হার্ডকোড নয়।
+  MERGE_METHOD: ${{ vars.MERGE_METHOD || 'squash' }}
+
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
+    # ড্রাফট PR বাদ; নিজের তৈরি PR (sync bot / GITHUB_TOKEN) বাদ দিয়ে লুপ এড়ানো হয়।
+    if: >-
+      github.event.pull_request.draft == false &&
+      github.event.pull_request.user.login != 'github-actions[bot]'
     steps:
       - name: Approve and Auto-Merge PR
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const pr = context.payload.pull_request;
-            
-            // ১. PR অনুমোদন (Approve) করা
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            const merge_method = process.env.MERGE_METHOD;
+
+            // ১. PR অনুমোদন (Approve) করা। নিজের PR হলে GitHub অনুমোদন দেয় না, সেটা উপেক্ষা করা হয়।
             try {
               await github.rest.pulls.createReview({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pr.number,
+                owner, repo, pull_number,
                 event: 'APPROVE',
                 body: 'Auto-approved by ZYRAXON AI automated system.'
               });
-              console.log(`Approved PR #${pr.number}`);
+              console.log(`Approved PR #${pull_number}`);
             } catch (error) {
-              console.log('Review error:', error.message);
+              console.log(`Review skipped: ${error.message}`);
             }
 
-            // ২. PR স্বয়ংক্রিয় squash মার্জ করা
+            // ২. মার্জ করার আগে সর্বশেষ mergeable অবস্থা নিশ্চিত করা (GitHub হিসাব করতে সময় নেয়)।
+            let mergeable = context.payload.pull_request.mergeable;
+            let mergeable_state = context.payload.pull_request.mergeable_state;
+            for (let i = 0; mergeable === null && i < 5; i++) {
+              await new Promise((r) => setTimeout(r, 3000));
+              const { data } = await github.rest.pulls.get({ owner, repo, pull_number });
+              mergeable = data.mergeable;
+              mergeable_state = data.mergeable_state;
+            }
+
+            if (mergeable === false) {
+              core.setFailed(`PR #${pull_number} cannot be merged (state: ${mergeable_state}).`);
+              return;
+            }
+
+            // ৩. PR স্বয়ংক্রিয়ভাবে মার্জ করা।
             try {
-              await github.rest.pulls.merge({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pr.number,
-                merge_method: 'squash'
+              const { data } = await github.rest.pulls.merge({
+                owner, repo, pull_number, merge_method
               });
-              console.log(`Successfully auto-merged PR #${pr.number}`);
+              console.log(`Merged PR #${pull_number} (${merge_method}): ${data.message}`);
             } catch (error) {
-              core.setFailed(`Failed to auto-merge PR: ${error.message}`);
+              core.setFailed(`Failed to auto-merge PR #${pull_number}: ${error.message}`);
             }

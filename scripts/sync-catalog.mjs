@@ -21,10 +21,16 @@ const API = 'public/api.json'
 const META = 'public/catalog-meta.json'
 const LOGOS_DIR = 'public/logos'
 
-// First-party providers that must survive every upstream refresh. Upstream
-// models.dev knows nothing about them, so they are merged back in after the
-// fetch, not fetched.
+// First-party providers that must survive every upstream refresh. The upstream
+// source knows nothing about them, so they are merged back in after the fetch,
+// not fetched.
 const FIRST_PARTY = JSON.parse(await readFile('src/lib/catalog/zyraxon-provider.json', 'utf8'))
+
+// Curated link corrections. Upstream keeps stale provider docs and endpoints
+// after a rebrand, a docs move or a host retirement, so the official URL is
+// pinned here and re-applied on every refresh. Without this the next sync would
+// overwrite any fix written straight into the generated files.
+const LINK_OVERRIDES = JSON.parse(await readFile('src/lib/catalog/link-overrides.json', 'utf8'))
 
 console.log('Fetching upstream catalog from:', SOURCE)
 const res = await fetch(SOURCE, { headers: { 'user-agent': 'zyraxon-ai-sync' } })
@@ -47,6 +53,22 @@ for (const [id, p] of Object.entries(FIRST_PARTY)) {
   console.log(`Merged first-party provider: ${id} (${Object.keys(p.models).length} models)`)
 }
 
+// Re-apply curated link corrections on top of the fresh upstream data.
+let overridden = 0
+for (const [id, patch] of Object.entries(LINK_OVERRIDES)) {
+  if (!providers[id]) {
+    console.warn(`Link override skipped, provider not in catalog: ${id}`)
+    continue
+  }
+  for (const [field, value] of Object.entries(patch)) {
+    if (providers[id][field] !== value) {
+      providers[id][field] = value
+      overridden++
+    }
+  }
+}
+console.log(`Applied ${overridden} link overrides`)
+
 // Merge unique models for snapshot
 const models = {}
 const score = (m) => Object.keys(m).length + (m.cost ? 5 : 0) + (m.limit ? 3 : 0)
@@ -62,7 +84,7 @@ if (modelCount < 500) throw new Error(`Refusing sync: only ${modelCount} models`
 await mkdir('public', { recursive: true })
 await mkdir(LOGOS_DIR, { recursive: true })
 
-// 1. models.json (models.dev-এর হুবহু গঠন ও ডেটা)
+// 1. models.json (same shape and data as the upstream catalog)
 console.log('Fetching canonical models.json from:', MODELS_SOURCE)
 const firstPartyModels = Object.fromEntries(
   Object.values(FIRST_PARTY).flatMap((p) => Object.entries(p.models).map(([id, m]) => [id, m]))
