@@ -2588,5 +2588,126 @@
       "ZYRAXON_API_KEY"
     ],
     "model_count": 10
+  },
+  "lambda": {
+    "id": "lambda",
+    "name": "Lambda",
+    "doc": "https://docs.lambda.ai",
+    "api": "https://api.lambda.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "LAMBDA_API_KEY"
+    ],
+    "model_count": 5
+  },
+  "nscale": {
+    "id": "nscale",
+    "name": "Nscale",
+    "doc": "https://docs.nscale.com",
+    "api": "https://inference.api.nscale.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "NSCALE_API_KEY"
+    ],
+    "model_count": 4
+  },
+  "hyperbolic": {
+    "id": "hyperbolic",
+    "name": "Hyperbolic",
+    "doc": "https://www.hyperbolic.ai/docs/overview/overview",
+    "api": "https://api.hyperbolic.xyz/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "HYPERBOLIC_API_KEY"
+    ],
+    "model_count": 4
+  },
+  "featherless-ai": {
+    "id": "featherless-ai",
+    "name": "Featherless AI",
+    "doc": "https://featherless.ai/docs",
+    "api": "https://api.featherless.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "FEATHERLESS_API_KEY"
+    ],
+    "model_count": 2
+  },
+  "parasail": {
+    "id": "parasail",
+    "name": "Parasail",
+    "doc": "https://docs.parasail.io",
+    "api": "https://api.parasail.io/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "PARASAIL_API_KEY"
+    ],
+    "model_count": 0
+  },
+  "replicate": {
+    "id": "replicate",
+    "name": "Replicate",
+    "doc": "https://replicate.com/docs",
+    "api": "https://api.replicate.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "REPLICATE_API_TOKEN"
+    ],
+    "model_count": 3
+  },
+  "heroku": {
+    "id": "heroku",
+    "name": "Heroku",
+    "doc": "https://devcenter.heroku.com/articles/heroku-inference-api",
+    "api": "https://us.inference.heroku.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "HEROKU_INFERENCE_API_KEY"
+    ],
+    "model_count": 2
+  },
+  "gigachat": {
+    "id": "gigachat",
+    "name": "GigaChat",
+    "doc": "https://developers.sber.ru/docs/ru/gigachat/api/overview",
+    "api": "https://gigachat.devices.sberbank.ru/api/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "GIGACHAT_API_KEY"
+    ],
+    "model_count": 2
+  },
+  "cognition": {
+    "id": "cognition",
+    "name": "Cognition",
+    "doc": "https://docs.devin.ai",
+    "api": "https://api.devin.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "DEVIN_API_KEY"
+    ],
+    "model_count": 2
+  },
+  "streamlake": {
+    "id": "streamlake",
+    "name": "StreamLake",
+    "doc": "https://streamlake.ai",
+    "api": "https://api.streamlake.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "STREAMLAKE_API_KEY"
+    ],
+    "model_count": 4
+  },
+  "anyscale": {
+    "id": "anyscale",
+    "name": "Anyscale",
+    "doc": "https://docs.anyscale.com",
+    "api": "https://api.endpoints.anyscale.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": [
+      "ANYSCALE_API_KEY"
+    ],
+    "model_count": 2
   }
 }

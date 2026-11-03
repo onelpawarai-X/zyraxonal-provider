@@ -97,6 +97,27 @@ Keys are provider ids, values are the fields to override (`doc` and/or `api`).
 Run `npm run sync:catalog` after editing so the snapshot and public JSON files
 pick up the change.
 
+## ➕ Additional providers
+
+Providers that the upstream catalog does not carry are curated in
+[`src/lib/catalog/provider-overrides.json`](src/lib/catalog/provider-overrides.json),
+sourced from OpenRouter, Vercel AI Gateway and LiteLLM. The sync script adds any
+id upstream is missing and merges their models into `public/models.json`, so they
+survive every refresh. Upstream always wins when it already knows an id.
+
+```json
+{
+  "nscale": {
+    "id": "nscale",
+    "name": "Nscale",
+    "doc": "https://docs.nscale.com",
+    "api": "https://inference.api.nscale.com/v1",
+    "env": ["NSCALE_API_KEY"],
+    "models": { "qwen3-235b-a22b": { "id": "qwen3-235b-a22b", "name": "Qwen3 235B A22B" } }
+  }
+}
+```
+
 ## 🤝 Contributing: How to Add a Provider or Model
 
 We welcome community contributions from AI creators, labs, and hosting platforms! All valid pull requests that match our schema are automatically merged.

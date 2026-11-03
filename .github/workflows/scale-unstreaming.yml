@@ -50,6 +50,7 @@ jobs:
           # পরিবর্তনের ফাইলসমূহ স্টেজিংয়ে যুক্ত করা
           git add src/lib/catalog/snapshot.json \
                   src/lib/catalog/link-overrides.json \
+                  src/lib/catalog/provider-overrides.json \
                   src/lib/catalog/zyraxon-provider.json \
                   public/api.json \
                   public/models.json \
@@ -81,6 +82,7 @@ jobs:
             --body "Automated sync bot detected changes:
             - Refreshed provider endpoints via src/lib/catalog/link-overrides.json
             - Synced latest upstream models, providers, and logos
+            - Re-applied curated external providers from src/lib/catalog/provider-overrides.json
             - Auto-merging into main branch.")
 
           echo "Pull Request successfully created at: $PR_URL"
