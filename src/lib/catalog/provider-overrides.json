@@ -1,0 +1,141 @@
+{
+  "lambda": {
+    "id": "lambda",
+    "name": "Lambda",
+    "doc": "https://docs.lambda.ai",
+    "api": "https://api.lambda.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["LAMBDA_API_KEY"],
+    "models": {
+      "deepseek-v3-0324": { "id": "deepseek-v3-0324", "name": "DeepSeek V3 (0324)", "family": "deepseek", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.2, "output": 0.6 } },
+      "deepseek-r1-0528": { "id": "deepseek-r1-0528", "name": "DeepSeek R1 (0528)", "family": "deepseek", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.2, "output": 0.6 } },
+      "hermes3-70b": { "id": "hermes3-70b", "name": "Hermes 3 70B", "family": "hermes", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.12, "output": 0.3 } },
+      "llama3.3-70b-instruct": { "id": "llama3.3-70b-instruct", "name": "Llama 3.3 70B Instruct", "family": "llama", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.12, "output": 0.3 } },
+      "qwen3-32b": { "id": "qwen3-32b", "name": "Qwen3 32B", "family": "qwen", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.1, "output": 0.3 } }
+    }
+  },
+  "nscale": {
+    "id": "nscale",
+    "name": "Nscale",
+    "doc": "https://docs.nscale.com",
+    "api": "https://inference.api.nscale.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["NSCALE_API_KEY"],
+    "models": {
+      "qwen3-235b-a22b": { "id": "qwen3-235b-a22b", "name": "Qwen3 235B A22B", "family": "qwen", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.2, "output": 0.6 } },
+      "qwen2.5-coder-32b-instruct": { "id": "qwen2.5-coder-32b-instruct", "name": "Qwen2.5 Coder 32B Instruct", "family": "qwen", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.06, "output": 0.2 } },
+      "qwq-32b": { "id": "qwq-32b", "name": "QwQ 32B", "family": "qwen", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.18, "output": 0.2 } },
+      "deepseek-r1-distill-llama-70b": { "id": "deepseek-r1-distill-llama-70b", "name": "DeepSeek R1 Distill Llama 70B", "family": "deepseek", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.375, "output": 0.375 } }
+    }
+  },
+  "hyperbolic": {
+    "id": "hyperbolic",
+    "name": "Hyperbolic",
+    "doc": "https://www.hyperbolic.ai/docs/overview/overview",
+    "api": "https://api.hyperbolic.xyz/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["HYPERBOLIC_API_KEY"],
+    "models": {
+      "qwen3-235b-a22b": { "id": "qwen3-235b-a22b", "name": "Qwen3 235B A22B", "family": "qwen", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 2, "output": 2 } },
+      "qwen2.5-72b-instruct": { "id": "qwen2.5-72b-instruct", "name": "Qwen2.5 72B Instruct", "family": "qwen", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.12, "output": 0.3 } },
+      "qwq-32b": { "id": "qwq-32b", "name": "QwQ 32B", "family": "qwen", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 131072, "output": 131072 }, "cost": { "input": 0.2, "output": 0.2 } },
+      "deepseek-r1": { "id": "deepseek-r1", "name": "DeepSeek R1", "family": "deepseek", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 32768, "output": 32768 }, "cost": { "input": 0.4, "output": 0.4 } }
+    }
+  },
+  "featherless-ai": {
+    "id": "featherless-ai",
+    "name": "Featherless AI",
+    "doc": "https://featherless.ai/docs",
+    "api": "https://api.featherless.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["FEATHERLESS_API_KEY"],
+    "models": {
+      "qwerky-72b": { "id": "qwerky-72b", "name": "Qwerky 72B", "family": "qwerky", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 32768, "output": 4096 } },
+      "qwerky-qwq-32b": { "id": "qwerky-qwq-32b", "name": "Qwerky QwQ 32B", "family": "qwerky", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 32768, "output": 4096 } }
+    }
+  },
+  "parasail": {
+    "id": "parasail",
+    "name": "Parasail",
+    "doc": "https://docs.parasail.io",
+    "api": "https://api.parasail.io/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["PARASAIL_API_KEY"],
+    "models": {}
+  },
+  "replicate": {
+    "id": "replicate",
+    "name": "Replicate",
+    "doc": "https://replicate.com/docs",
+    "api": "https://api.replicate.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["REPLICATE_API_TOKEN"],
+    "models": {
+      "meta/llama-2-70b-chat": { "id": "meta/llama-2-70b-chat", "name": "Llama 2 70B Chat", "family": "llama", "attachment": false, "reasoning": false, "tool_call": false, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 4096, "output": 4096 }, "cost": { "input": 0.65, "output": 2.75 } },
+      "meta/llama-2-13b-chat": { "id": "meta/llama-2-13b-chat", "name": "Llama 2 13B Chat", "family": "llama", "attachment": false, "reasoning": false, "tool_call": false, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 4096, "output": 4096 }, "cost": { "input": 0.1, "output": 0.5 } },
+      "meta/llama-2-7b-chat": { "id": "meta/llama-2-7b-chat", "name": "Llama 2 7B Chat", "family": "llama", "attachment": false, "reasoning": false, "tool_call": false, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 4096, "output": 4096 }, "cost": { "input": 0.05, "output": 0.25 } }
+    }
+  },
+  "heroku": {
+    "id": "heroku",
+    "name": "Heroku",
+    "doc": "https://devcenter.heroku.com/articles/heroku-inference-api",
+    "api": "https://us.inference.heroku.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["HEROKU_INFERENCE_API_KEY"],
+    "models": {
+      "claude-4-sonnet": { "id": "claude-4-sonnet", "name": "Claude 4 Sonnet", "family": "claude", "attachment": true, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text", "image"], "output": ["text"] }, "limit": { "context": 200000, "output": 8192 } },
+      "claude-3-7-sonnet": { "id": "claude-3-7-sonnet", "name": "Claude 3.7 Sonnet", "family": "claude", "attachment": true, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text", "image"], "output": ["text"] }, "limit": { "context": 200000, "output": 8192 } }
+    }
+  },
+  "gigachat": {
+    "id": "gigachat",
+    "name": "GigaChat",
+    "doc": "https://developers.sber.ru/docs/ru/gigachat/api/overview",
+    "api": "https://gigachat.devices.sberbank.ru/api/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["GIGACHAT_API_KEY"],
+    "models": {
+      "GigaChat-2-Max": { "id": "GigaChat-2-Max", "name": "GigaChat 2 Max", "family": "gigachat", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 128000, "output": 8192 }, "cost": { "input": 0, "output": 0 } },
+      "GigaChat-2-Pro": { "id": "GigaChat-2-Pro", "name": "GigaChat 2 Pro", "family": "gigachat", "attachment": false, "reasoning": false, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 128000, "output": 8192 }, "cost": { "input": 0, "output": 0 } }
+    }
+  },
+  "cognition": {
+    "id": "cognition",
+    "name": "Cognition",
+    "doc": "https://docs.devin.ai",
+    "api": "https://api.devin.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["DEVIN_API_KEY"],
+    "models": {
+      "swe-1.7": { "id": "swe-1.7", "name": "SWE-1.7", "family": "swe", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 200000, "output": 65536 }, "cost": { "input": 0.5, "output": 2.5 } },
+      "swe-1.7-lightning": { "id": "swe-1.7-lightning", "name": "SWE-1.7 Lightning", "family": "swe", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 200000, "output": 65536 }, "cost": { "input": 2.5, "output": 12.5 } }
+    }
+  },
+  "streamlake": {
+    "id": "streamlake",
+    "name": "StreamLake",
+    "doc": "https://streamlake.ai",
+    "api": "https://api.streamlake.ai/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["STREAMLAKE_API_KEY"],
+    "models": {
+      "deepseek-v4-flash-0731": { "id": "deepseek-v4-flash-0731", "name": "DeepSeek V4 Flash (0731)", "family": "deepseek", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 1048576, "output": 384000 }, "cost": { "input": 0.44, "output": 1.32 } },
+      "deepseek-v4-pro-0813": { "id": "deepseek-v4-pro-0813", "name": "DeepSeek V4 Pro (0813)", "family": "deepseek", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 1048576, "output": 384000 }, "cost": { "input": 1.32, "output": 3.96 } },
+      "glm-5.3-flash": { "id": "glm-5.3-flash", "name": "GLM 5.3 Flash", "family": "glm", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 1048576, "output": 384000 }, "cost": { "input": 0.15, "output": 0.5 } },
+      "kimi-k2-instruct-0905": { "id": "kimi-k2-instruct-0905", "name": "Kimi K2 Instruct (0905)", "family": "kimi", "attachment": false, "reasoning": true, "tool_call": true, "temperature": true, "open_weights": false, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 224000, "output": 224000 }, "cost": { "input": 0.571, "output": 2.286 } }
+    }
+  },
+  "anyscale": {
+    "id": "anyscale",
+    "name": "Anyscale",
+    "doc": "https://docs.anyscale.com",
+    "api": "https://api.endpoints.anyscale.com/v1",
+    "npm": "@ai-sdk/openai-compatible",
+    "env": ["ANYSCALE_API_KEY"],
+    "models": {
+      "meta-llama/Llama-2-70b-chat-hf": { "id": "meta-llama/Llama-2-70b-chat-hf", "name": "Llama 2 70B Chat", "family": "llama", "attachment": false, "reasoning": false, "tool_call": false, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 4096, "output": 4096 }, "cost": { "input": 1, "output": 1 } },
+      "meta-llama/Llama-2-13b-chat-hf": { "id": "meta-llama/Llama-2-13b-chat-hf", "name": "Llama 2 13B Chat", "family": "llama", "attachment": false, "reasoning": false, "tool_call": false, "temperature": true, "open_weights": true, "modalities": { "input": ["text"], "output": ["text"] }, "limit": { "context": 4096, "output": 4096 }, "cost": { "input": 0.25, "output": 0.25 } }
+    }
+  }
+}

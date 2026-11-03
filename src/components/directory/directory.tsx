@@ -22,6 +22,7 @@ const links = {
   facebook: 'https://www.facebook.com/onelpawarai',
   group: 'https://zyraxon-group-x.lovable.app',
 }
+const labLinks: Record<string, string> = { zyraxon: links.group }
 
 function Logo({ id }: { id: string }) {
   return logoMap[id] ? (
@@ -405,6 +406,18 @@ export function Directory({ view }: { view: View }) {
                         {view === 'providers' && row.id === 'zyraxon' && (
                           <span className="first-party-badge">First-party</span>
                         )}
+                        {view === 'labs' && labLinks[row.id] && (
+                          <a
+                            className="lab-external inline-flex ml-2 align-middle text-muted-foreground hover:text-primary"
+                            href={labLinks[row.id]}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`Open ${row.name}`}
+                            onClick={e => e.stopPropagation()}
+                          >
+                            <ExternalLink size={12} />
+                          </a>
+                        )}
                       </div>
                       <div className="model-id">{row.id}</div>
                     </Button>
@@ -575,6 +588,15 @@ export function Directory({ view }: { view: View }) {
           <DialogDescription>
             {selectedProvider ? `${Object.keys(selectedProvider.models).length} provider models` : `${selectedLab?.models.length ?? 0} models in this lab`}
           </DialogDescription>
+          {selectedLab && labLinks[selectedLab.id] && (
+            <div className="flex gap-3">
+              <Button variant="default" size="sm" asChild>
+                <a href={labLinks[selectedLab.id]} target="_blank" rel="noreferrer">
+                  Open lab <ArrowUpRight />
+                </a>
+              </Button>
+            </div>
+          )}
           {selectedProvider && (
             <dl className="about-list">
               <dt>Provider ID</dt><dd className="font-mono">{selectedProvider.id}</dd>

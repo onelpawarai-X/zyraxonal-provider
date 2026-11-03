@@ -32,6 +32,11 @@ const FIRST_PARTY = JSON.parse(await readFile('src/lib/catalog/zyraxon-provider.
 // overwrite any fix written straight into the generated files.
 const LINK_OVERRIDES = JSON.parse(await readFile('src/lib/catalog/link-overrides.json', 'utf8'))
 
+// Additional providers sourced from outside the upstream catalog (OpenRouter,
+// Vercel AI Gateway, LiteLLM). Merged in like first-party entries, and refreshed
+// over the top so a provider we curate is never dropped by an upstream change.
+const PROVIDER_OVERRIDES = JSON.parse(await readFile('src/lib/catalog/provider-overrides.json', 'utf8'))
+
 console.log('Fetching upstream catalog from:', SOURCE)
 const res = await fetch(SOURCE, { headers: { 'user-agent': 'zyraxon-ai-sync' } })
 if (!res.ok) throw new Error(`Upstream fetch failed: ${res.status}`)
@@ -52,6 +57,18 @@ for (const [id, p] of Object.entries(FIRST_PARTY)) {
   providers[id] = p
   console.log(`Merged first-party provider: ${id} (${Object.keys(p.models).length} models)`)
 }
+
+// Merge curated external providers (from OpenRouter / Vercel / LiteLLM).
+// Upstream wins when it already knows the id; otherwise our record is added.
+let addedProviders = 0
+for (const [id, p] of Object.entries(PROVIDER_OVERRIDES)) {
+  if (!providers[id]) {
+    providers[id] = p
+    addedProviders++
+    console.log(`Added external provider: ${id} (${Object.keys(p.models ?? {}).length} models)`)
+  }
+}
+console.log(`Added ${addedProviders} external providers`)
 
 // Re-apply curated link corrections on top of the fresh upstream data.
 let overridden = 0
@@ -86,8 +103,9 @@ await mkdir(LOGOS_DIR, { recursive: true })
 
 // 1. models.json (same shape and data as the upstream catalog)
 console.log('Fetching canonical models.json from:', MODELS_SOURCE)
+const curatedProviders = { ...FIRST_PARTY, ...PROVIDER_OVERRIDES }
 const firstPartyModels = Object.fromEntries(
-  Object.values(FIRST_PARTY).flatMap((p) => Object.entries(p.models).map(([id, m]) => [id, m]))
+  Object.values(curatedProviders).flatMap((p) => Object.entries(p.models ?? {}).map(([id, m]) => [id, m]))
 )
 const withFirstParty = (m) => ({ ...m, ...firstPartyModels })
 try {
@@ -96,7 +114,7 @@ try {
     const m = await r.json()
     if (Object.keys(m).length > 100) {
       await writeFile('public/models.json', JSON.stringify(withFirstParty(m), null, 2))
-      console.log(`Saved public/models.json (${Object.keys(m).length} canonical models + ${Object.keys(firstPartyModels).length} first-party)`)
+      console.log(`Saved public/models.json (${Object.keys(m).length} canonical models + ${Object.keys(firstPartyModels).length} curated)`)
     }
   } else {
     // Fallback to internal merged catalog if upstream models.json is unavailable
@@ -108,10 +126,11 @@ try {
 }
 
 // 2. Provider Logos (e.g. openai.svg, google.svg, etc.)
-console.log(`Syncing SVG logos for ${providerIds.length} providers into ${LOGOS_DIR}/...`)
+const logoIds = [...new Set([...providerIds, ...Object.keys(PROVIDER_OVERRIDES), ...Object.keys(FIRST_PARTY)])]
+console.log(`Syncing SVG logos for ${logoIds.length} providers into ${LOGOS_DIR}/...`)
 let newLogos = 0
-for (let i = 0; i < providerIds.length; i += 10) {
-  const batch = providerIds.slice(i, i + 10)
+for (let i = 0; i < logoIds.length; i += 10) {
+  const batch = logoIds.slice(i, i + 10)
   await Promise.all(batch.map(async (id) => {
     const targetPath = join(LOGOS_DIR, `${id}.svg`)
     const exists = await access(targetPath).then(() => true).catch(() => false)
@@ -156,7 +175,7 @@ await writeFile(
     providers: Object.keys(providers).length,
     models: modelCount,
     variants,
-    logos: providerIds.length
+    logos: logoIds.length
   }, null, 2)
 )
 
