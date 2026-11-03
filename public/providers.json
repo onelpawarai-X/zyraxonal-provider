@@ -117,7 +117,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 172
+    "model_count": 169
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -536,7 +536,7 @@
     "api": "https://api.cortecs.ai/v1",
     "name": "Cortecs",
     "doc": "https://api.cortecs.ai/v1/models",
-    "model_count": 108
+    "model_count": 106
   },
   "crossmodel": {
     "id": "crossmodel",
@@ -835,7 +835,7 @@
     "api": "https://api.greenpt.ai/v1",
     "name": "GreenPT",
     "doc": "https://docs.greenpt.ai",
-    "model_count": 40
+    "model_count": 41
   },
   "groq": {
     "id": "groq",
@@ -911,7 +911,7 @@
     "api": "https://hyper.charm.land/v1",
     "name": "Charm Hyper",
     "doc": "https://hyper.charm.land",
-    "model_count": 23
+    "model_count": 24
   },
   "impossibl": {
     "id": "impossibl",
@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 382
+    "model_count": 381
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
