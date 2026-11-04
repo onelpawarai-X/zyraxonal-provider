@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 375
+    "model_count": 376
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -2324,7 +2324,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 416
+    "model_count": 417
   },
   "vispark": {
     "id": "vispark",
