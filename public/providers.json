@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 388
+    "model_count": 389
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -911,7 +911,7 @@
     "api": "https://hyper.charm.land/v1",
     "name": "Charm Hyper",
     "doc": "https://hyper.charm.land",
-    "model_count": 24
+    "model_count": 26
   },
   "impossibl": {
     "id": "impossibl",
@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 376
+    "model_count": 377
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1648,7 +1648,7 @@
     "api": "https://opencode.ai/inference/go/openai/v1",
     "name": "OpenCode Go",
     "doc": "https://opencode.ai/v2/docs/console/go/",
-    "model_count": 37
+    "model_count": 38
   },
   "openreason": {
     "id": "openreason",
@@ -1670,7 +1670,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 376
+    "model_count": 377
   },
   "opper": {
     "id": "opper",
@@ -2151,7 +2151,7 @@
     "api": "https://api.lkeap.cloud.tencent.com/plan/v3",
     "name": "Tencent Token Plan",
     "doc": "https://cloud.tencent.com/document/product/1823/130060",
-    "model_count": 2
+    "model_count": 3
   },
   "tencent-tokenhub": {
     "id": "tencent-tokenhub",
@@ -2162,7 +2162,7 @@
     "api": "https://tokenhub.tencentmaas.com/v1",
     "name": "Tencent TokenHub",
     "doc": "https://cloud.tencent.com/document/product/1823/130050",
-    "model_count": 3
+    "model_count": 4
   },
   "tensorx": {
     "id": "tensorx",
