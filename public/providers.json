@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 199
+    "model_count": 200
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -2324,7 +2324,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 417
+    "model_count": 414
   },
   "vispark": {
     "id": "vispark",
