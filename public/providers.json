@@ -911,7 +911,7 @@
     "api": "https://hyper.charm.land/v1",
     "name": "Charm Hyper",
     "doc": "https://hyper.charm.land",
-    "model_count": 26
+    "model_count": 18
   },
   "impossibl": {
     "id": "impossibl",
@@ -1165,7 +1165,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 433
+    "model_count": 434
   },
   "llmtech": {
     "id": "llmtech",
