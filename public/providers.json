@@ -723,7 +723,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://docs.fireworks.ai/getting-started/introduction",
-    "model_count": 29
+    "model_count": 31
   },
   "freemodel": {
     "id": "freemodel",
@@ -1450,7 +1450,7 @@
     "api": "https://api.morphllm.com/v1",
     "name": "Morph",
     "doc": "https://docs.morphllm.com",
-    "model_count": 11
+    "model_count": 12
   },
   "munito": {
     "id": "munito",
@@ -1572,7 +1572,7 @@
     "api": "https://api.novita.ai/openai",
     "name": "Novita AI",
     "doc": "https://docs.novita.ai/guides/introduction",
-    "model_count": 89
+    "model_count": 91
   },
   "nvidia": {
     "id": "nvidia",
@@ -1616,7 +1616,7 @@
     "api": "https://ollama.com/v1",
     "name": "Ollama Cloud",
     "doc": "https://docs.ollama.com/cloud",
-    "model_count": 25
+    "model_count": 26
   },
   "openai": {
     "id": "openai",
@@ -2206,7 +2206,7 @@
     "api": "https://inference.tinfoil.sh/v1",
     "name": "Tinfoil",
     "doc": "https://docs.tinfoil.sh",
-    "model_count": 8
+    "model_count": 9
   },
   "togetherai": {
     "id": "togetherai",
