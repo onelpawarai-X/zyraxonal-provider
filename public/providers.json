@@ -723,7 +723,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://docs.fireworks.ai/getting-started/introduction",
-    "model_count": 31
+    "model_count": 27
   },
   "freemodel": {
     "id": "freemodel",
