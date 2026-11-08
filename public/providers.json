@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 375
+    "model_count": 374
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
