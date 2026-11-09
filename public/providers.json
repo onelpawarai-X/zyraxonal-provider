@@ -2314,7 +2314,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 128
+    "model_count": 125
   },
   "vercel": {
     "id": "vercel",
