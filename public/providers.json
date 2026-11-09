@@ -229,7 +229,7 @@
     "npm": "@ai-sdk/amazon-bedrock",
     "name": "Amazon Bedrock",
     "doc": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-    "model_count": 203
+    "model_count": 208
   },
   "ambient": {
     "id": "ambient",
@@ -261,7 +261,7 @@
     "npm": "@ai-sdk/anthropic",
     "name": "Anthropic",
     "doc": "https://platform.claude.com/docs/en/models/overview",
-    "model_count": 17
+    "model_count": 18
   },
   "anyapi": {
     "id": "anyapi",
@@ -316,7 +316,7 @@
     "npm": "@ai-sdk/azure",
     "name": "Azure",
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
-    "model_count": 96
+    "model_count": 97
   },
   "azure-cognitive-services": {
     "id": "azure-cognitive-services",
@@ -327,7 +327,7 @@
     "npm": "@ai-sdk/azure",
     "name": "Azure Cognitive Services",
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
-    "model_count": 96
+    "model_count": 97
   },
   "bailing": {
     "id": "bailing",
@@ -425,7 +425,7 @@
     "api": "https://llm.chutes.ai/v1",
     "name": "Chutes",
     "doc": "https://llm.chutes.ai/v1/models",
-    "model_count": 18
+    "model_count": 19
   },
   "clarifai": {
     "id": "clarifai",
@@ -668,7 +668,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 384
+    "model_count": 385
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -812,7 +812,7 @@
     "npm": "@ai-sdk/google-vertex",
     "name": "Vertex",
     "doc": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
-    "model_count": 61
+    "model_count": 62
   },
   "google-vertex-anthropic": {
     "id": "google-vertex-anthropic",
@@ -824,7 +824,7 @@
     "npm": "@ai-sdk/google-vertex/anthropic",
     "name": "Vertex (Anthropic)",
     "doc": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude",
-    "model_count": 17
+    "model_count": 18
   },
   "greenpt": {
     "id": "greenpt",
@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 374
+    "model_count": 375
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1154,7 +1154,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 199
+    "model_count": 201
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1165,7 +1165,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 433
+    "model_count": 437
   },
   "llmtech": {
     "id": "llmtech",
@@ -1275,7 +1275,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 203
+    "model_count": 204
   },
   "meta": {
     "id": "meta",
@@ -1494,7 +1494,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 642
+    "model_count": 634
   },
   "nearai": {
     "id": "nearai",
@@ -1637,7 +1637,7 @@
     "api": "https://opencode.ai/inference/openai/v1",
     "name": "OpenCode",
     "doc": "https://opencode.ai/v2/docs/console/models/",
-    "model_count": 134
+    "model_count": 137
   },
   "opencode-go": {
     "id": "opencode-go",
@@ -1648,7 +1648,7 @@
     "api": "https://opencode.ai/inference/go/openai/v1",
     "name": "OpenCode Go",
     "doc": "https://opencode.ai/v2/docs/console/go/",
-    "model_count": 39
+    "model_count": 40
   },
   "openreason": {
     "id": "openreason",
@@ -1670,7 +1670,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 374
+    "model_count": 375
   },
   "opper": {
     "id": "opper",
@@ -2314,7 +2314,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 125
+    "model_count": 126
   },
   "vercel": {
     "id": "vercel",
@@ -2324,7 +2324,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 416
+    "model_count": 419
   },
   "vispark": {
     "id": "vispark",
