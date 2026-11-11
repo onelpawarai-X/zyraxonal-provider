@@ -481,7 +481,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 75
+    "model_count": 76
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -767,7 +767,7 @@
     "api": "https://api.githubcopilot.com",
     "name": "GitHub Copilot",
     "doc": "https://docs.github.com/en/copilot",
-    "model_count": 36
+    "model_count": 38
   },
   "gitlab": {
     "id": "gitlab",
@@ -1605,7 +1605,7 @@
     "api": "https://api.ofox.ai/v1",
     "name": "Ofox",
     "doc": "https://ofox.ai/docs",
-    "model_count": 150
+    "model_count": 151
   },
   "ollama-cloud": {
     "id": "ollama-cloud",
@@ -1790,7 +1790,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 70
+    "model_count": 72
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -2324,7 +2324,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 421
+    "model_count": 418
   },
   "vispark": {
     "id": "vispark",
