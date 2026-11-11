@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 379
+    "model_count": 380
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1494,7 +1494,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 632
+    "model_count": 634
   },
   "nearai": {
     "id": "nearai",
@@ -1505,7 +1505,7 @@
     "api": "https://cloud-api.near.ai/v1",
     "name": "NEAR AI Cloud",
     "doc": "https://docs.near.ai/",
-    "model_count": 60
+    "model_count": 59
   },
   "nebius": {
     "id": "nebius",
@@ -2324,7 +2324,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 420
+    "model_count": 421
   },
   "vispark": {
     "id": "vispark",
