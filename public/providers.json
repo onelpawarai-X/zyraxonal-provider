@@ -481,7 +481,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 76
+    "model_count": 77
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -536,7 +536,7 @@
     "api": "https://api.cortecs.ai/v1",
     "name": "Cortecs",
     "doc": "https://api.cortecs.ai/v1/models",
-    "model_count": 106
+    "model_count": 105
   },
   "crossmodel": {
     "id": "crossmodel",
@@ -613,7 +613,7 @@
     "api": "https://inference.do-ai.run/v1",
     "name": "DigitalOcean",
     "doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/",
-    "model_count": 84
+    "model_count": 86
   },
   "dinference": {
     "id": "dinference",
@@ -690,7 +690,7 @@
     "api": "https://api.engy.ai/v1",
     "name": "engy",
     "doc": "https://engy.ai/pricing",
-    "model_count": 9
+    "model_count": 10
   },
   "evroc": {
     "id": "evroc",
@@ -1066,7 +1066,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 377
+    "model_count": 378
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1670,7 +1670,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 376
+    "model_count": 377
   },
   "opper": {
     "id": "opper",
