@@ -1516,7 +1516,7 @@
     "api": "https://api.tokenfactory.nebius.com/v1",
     "name": "Nebius Token Factory",
     "doc": "https://docs.tokenfactory.nebius.com/",
-    "model_count": 26
+    "model_count": 21
   },
   "neon": {
     "id": "neon",
