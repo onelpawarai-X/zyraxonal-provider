@@ -679,7 +679,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 395
+    "model_count": 396
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1077,7 +1077,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 469
+    "model_count": 467
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1165,7 +1165,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 201
+    "model_count": 202
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1176,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 460
+    "model_count": 467
   },
   "llmtech": {
     "id": "llmtech",
@@ -1505,7 +1505,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 618
+    "model_count": 617
   },
   "nearai": {
     "id": "nearai",
@@ -1681,7 +1681,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 383
+    "model_count": 378
   },
   "opper": {
     "id": "opper",
@@ -1801,7 +1801,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 72
+    "model_count": 70
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -1931,7 +1931,7 @@
     "api": "https://api.sambanova.ai/v1",
     "name": "SambaNova",
     "doc": "https://docs.sambanova.ai/cloud/docs/get-started/supported-models",
-    "model_count": 6
+    "model_count": 5
   },
   "sap-ai-core": {
     "id": "sap-ai-core",
