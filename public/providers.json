@@ -406,6 +406,17 @@
     "doc": "https://inference.boundless.network/models",
     "model_count": 20
   },
+  "byteplus": {
+    "id": "byteplus",
+    "env": [
+      "BYTEPLUS_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://ark.ap-southeast.bytepluses.com/api/v3",
+    "name": "BytePlus ModelArk",
+    "doc": "https://docs.byteplus.com/en/docs/ModelArk/1529329",
+    "model_count": 14
+  },
   "cerebras": {
     "id": "cerebras",
     "env": [
@@ -800,7 +811,7 @@
     "npm": "@ai-sdk/google",
     "name": "Google",
     "doc": "https://ai.google.dev/gemini-api/docs/models",
-    "model_count": 38
+    "model_count": 37
   },
   "google-vertex": {
     "id": "google-vertex",
@@ -1066,7 +1077,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 377
+    "model_count": 472
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1165,7 +1176,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 445
+    "model_count": 460
   },
   "llmtech": {
     "id": "llmtech",
