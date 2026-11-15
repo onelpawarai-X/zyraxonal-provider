@@ -1517,7 +1517,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 465
+    "model_count": 462
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1649,7 +1649,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 202
+    "model_count": 203
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 467
+    "model_count": 468
   },
   "llmtech": {
     "id": "llmtech",
