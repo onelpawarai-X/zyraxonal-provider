@@ -1186,7 +1186,7 @@
     "api": "https://router.hostinger.com/v1",
     "name": "Hostinger Router",
     "doc": "https://www.hostinger.com/ai-router",
-    "model_count": 9
+    "model_count": 8
   },
   "hpc-ai": {
     "id": "hpc-ai",
