@@ -745,7 +745,7 @@
     "api": "https://api.crossmodel.ai/v1",
     "name": "CrossModel",
     "doc": "https://www.crossmodel.ai/docs",
-    "model_count": 73
+    "model_count": 75
   },
   "crusoe": {
     "id": "crusoe",
@@ -888,7 +888,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 397
+    "model_count": 395
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 499
+    "model_count": 501
   },
   "llmtech": {
     "id": "llmtech",
@@ -3238,7 +3238,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 132
+    "model_count": 133
   },
   "vercel": {
     "id": "vercel",
