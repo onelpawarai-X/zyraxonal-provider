@@ -680,7 +680,7 @@
     "api": "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/v1",
     "name": "Cloudflare Workers AI",
     "doc": "https://developers.cloudflare.com/workers-ai/models/",
-    "model_count": 29
+    "model_count": 30
   },
   "cohere": {
     "id": "cohere",
@@ -888,7 +888,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 395
+    "model_count": 399
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1230,7 +1230,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 87
+    "model_count": 92
   },
   "humain": {
     "id": "humain",
@@ -1517,7 +1517,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 469
+    "model_count": 468
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 502
+    "model_count": 501
   },
   "llmtech": {
     "id": "llmtech",
@@ -2044,7 +2044,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 606
+    "model_count": 598
   },
   "nearai": {
     "id": "nearai",
@@ -2055,7 +2055,7 @@
     "api": "https://cloud-api.near.ai/v1",
     "name": "NEAR AI Cloud",
     "doc": "https://docs.near.ai/",
-    "model_count": 60
+    "model_count": 59
   },
   "nebius": {
     "id": "nebius",
@@ -2231,7 +2231,7 @@
     "api": "https://opencode.ai/inference/openai/v1",
     "name": "OpenCode",
     "doc": "https://opencode.ai/v2/docs/console/models/",
-    "model_count": 143
+    "model_count": 144
   },
   "opencode-go": {
     "id": "opencode-go",
@@ -2264,7 +2264,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 382
+    "model_count": 383
   },
   "opper": {
     "id": "opper",
@@ -3238,7 +3238,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 133
+    "model_count": 134
   },
   "vercel": {
     "id": "vercel",
@@ -3248,7 +3248,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 416
+    "model_count": 417
   },
   "verda": {
     "id": "verda",
