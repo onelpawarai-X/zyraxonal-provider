@@ -745,7 +745,7 @@
     "api": "https://api.crossmodel.ai/v1",
     "name": "CrossModel",
     "doc": "https://www.crossmodel.ai/docs",
-    "model_count": 75
+    "model_count": 76
   },
   "crusoe": {
     "id": "crusoe",
@@ -888,7 +888,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 399
+    "model_count": 402
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1053,7 +1053,7 @@
     "api": "https://api.githubcopilot.com",
     "name": "GitHub Copilot",
     "doc": "https://docs.github.com/en/copilot",
-    "model_count": 43
+    "model_count": 44
   },
   "gitlab": {
     "id": "gitlab",
@@ -1649,7 +1649,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 215
+    "model_count": 216
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 501
+    "model_count": 504
   },
   "llmtech": {
     "id": "llmtech",
@@ -3248,7 +3248,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 417
+    "model_count": 418
   },
   "verda": {
     "id": "verda",
@@ -3281,7 +3281,7 @@
     "api": "https://api.vivgrid.com/v1",
     "name": "Vivgrid",
     "doc": "https://vivgrid.com/docs/models",
-    "model_count": 38
+    "model_count": 42
   },
   "volcengine": {
     "id": "volcengine",
