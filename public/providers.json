@@ -888,7 +888,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 401
+    "model_count": 389
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1230,7 +1230,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 92
+    "model_count": 93
   },
   "humain": {
     "id": "humain",
@@ -1649,7 +1649,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 216
+    "model_count": 217
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 503
+    "model_count": 505
   },
   "llmtech": {
     "id": "llmtech",
@@ -2044,7 +2044,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 613
+    "model_count": 614
   },
   "nearai": {
     "id": "nearai",
@@ -2055,7 +2055,7 @@
     "api": "https://cloud-api.near.ai/v1",
     "name": "NEAR AI Cloud",
     "doc": "https://docs.near.ai/",
-    "model_count": 59
+    "model_count": 61
   },
   "nebius": {
     "id": "nebius",
@@ -2066,7 +2066,7 @@
     "api": "https://api.tokenfactory.nebius.com/v1",
     "name": "Nebius Token Factory",
     "doc": "https://docs.tokenfactory.nebius.com/",
-    "model_count": 23
+    "model_count": 24
   },
   "neon": {
     "id": "neon",
