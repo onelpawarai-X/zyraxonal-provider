@@ -734,7 +734,7 @@
     "api": "https://api.cortecs.ai/v1",
     "name": "Cortecs",
     "doc": "https://api.cortecs.ai/v1/models",
-    "model_count": 106
+    "model_count": 110
   },
   "crossmodel": {
     "id": "crossmodel",
@@ -888,7 +888,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 402
+    "model_count": 401
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1020,7 +1020,7 @@
     "api": "https://api.friendli.ai/serverless/v1",
     "name": "Friendli",
     "doc": "https://friendli.ai/docs/guides/serverless_endpoints/introduction",
-    "model_count": 5
+    "model_count": 4
   },
   "frogbot": {
     "id": "frogbot",
@@ -1517,7 +1517,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 468
+    "model_count": 467
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 504
+    "model_count": 502
   },
   "llmtech": {
     "id": "llmtech",
@@ -1814,7 +1814,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 208
+    "model_count": 209
   },
   "meta": {
     "id": "meta",
@@ -2044,7 +2044,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 598
+    "model_count": 612
   },
   "nearai": {
     "id": "nearai",
@@ -2199,7 +2199,7 @@
     "api": "https://api.ofox.ai/v1",
     "name": "Ofox",
     "doc": "https://ofox.ai/docs",
-    "model_count": 156
+    "model_count": 157
   },
   "ollama-cloud": {
     "id": "ollama-cloud",
@@ -2264,7 +2264,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 383
+    "model_count": 381
   },
   "opper": {
     "id": "opper",
@@ -2439,7 +2439,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 70
+    "model_count": 73
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -2548,7 +2548,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://www.requesty.ai/models",
-    "model_count": 179
+    "model_count": 182
   },
   "routing-run": {
     "id": "routing-run",
@@ -3248,7 +3248,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 418
+    "model_count": 417
   },
   "verda": {
     "id": "verda",
@@ -3390,7 +3390,7 @@
     "npm": "@ai-sdk/xai",
     "name": "xAI",
     "doc": "https://docs.x.ai/docs/models",
-    "model_count": 12
+    "model_count": 11
   },
   "xiaomi": {
     "id": "xiaomi",
