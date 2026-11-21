@@ -1517,7 +1517,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 466
+    "model_count": 465
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -2044,7 +2044,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 614
+    "model_count": 613
   },
   "nearai": {
     "id": "nearai",
