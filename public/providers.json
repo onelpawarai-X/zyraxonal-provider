@@ -3281,7 +3281,7 @@
     "api": "https://api.vivgrid.com/v1",
     "name": "Vivgrid",
     "doc": "https://vivgrid.com/docs/models",
-    "model_count": 42
+    "model_count": 45
   },
   "volcengine": {
     "id": "volcengine",
