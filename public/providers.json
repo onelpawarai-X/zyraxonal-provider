@@ -601,7 +601,7 @@
     "api": "https://llm.chutes.ai/v1",
     "name": "Chutes",
     "doc": "https://llm.chutes.ai/v1/models",
-    "model_count": 19
+    "model_count": 20
   },
   "clarifai": {
     "id": "clarifai",
@@ -2210,7 +2210,7 @@
     "api": "https://ollama.com/v1",
     "name": "Ollama Cloud",
     "doc": "https://docs.ollama.com/cloud",
-    "model_count": 27
+    "model_count": 28
   },
   "openai": {
     "id": "openai",
@@ -2242,7 +2242,7 @@
     "api": "https://opencode.ai/inference/go/openai/v1",
     "name": "OpenCode Go",
     "doc": "https://opencode.ai/v2/docs/console/go/",
-    "model_count": 42
+    "model_count": 43
   },
   "openreason": {
     "id": "openreason",
