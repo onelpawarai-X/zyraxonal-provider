@@ -899,7 +899,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 388
+    "model_count": 390
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1097,7 +1097,7 @@
     "npm": "@ai-sdk/google",
     "name": "Google",
     "doc": "https://ai.google.dev/gemini-api/docs/models",
-    "model_count": 39
+    "model_count": 36
   },
   "google-vertex": {
     "id": "google-vertex",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 465
+    "model_count": 466
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1627,7 +1627,7 @@
     "api": "https://api.kunavo.com/v1",
     "name": "Kunavo",
     "doc": "https://kunavo.com/docs/quickstart?utm_source=models.dev&utm_medium=directory",
-    "model_count": 16
+    "model_count": 19
   },
   "liquid": {
     "id": "liquid",
@@ -1671,7 +1671,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 507
+    "model_count": 508
   },
   "llmtech": {
     "id": "llmtech",
@@ -1726,7 +1726,7 @@
     "api": "https://api.longcat.chat/openai",
     "name": "LongCat",
     "doc": "https://longcat.chat/platform/docs/",
-    "model_count": 2
+    "model_count": 3
   },
   "lowrouter": {
     "id": "lowrouter",
@@ -1890,7 +1890,7 @@
     "npm": "@ai-sdk/mistral",
     "name": "Mistral",
     "doc": "https://docs.mistral.ai/getting-started/models/",
-    "model_count": 36
+    "model_count": 26
   },
   "mixlayer": {
     "id": "mixlayer",
@@ -2055,7 +2055,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 613
+    "model_count": 606
   },
   "nearai": {
     "id": "nearai",
@@ -2231,7 +2231,7 @@
     "npm": "@ai-sdk/openai",
     "name": "OpenAI",
     "doc": "https://developers.openai.com/api/docs/models",
-    "model_count": 53
+    "model_count": 43
   },
   "opencode": {
     "id": "opencode",
@@ -2242,7 +2242,7 @@
     "api": "https://opencode.ai/inference/openai/v1",
     "name": "OpenCode",
     "doc": "https://opencode.ai/v2/docs/console/models/",
-    "model_count": 144
+    "model_count": 145
   },
   "opencode-go": {
     "id": "opencode-go",
@@ -2275,7 +2275,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 379
+    "model_count": 380
   },
   "opper": {
     "id": "opper",
@@ -2570,7 +2570,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://www.requesty.ai/models",
-    "model_count": 182
+    "model_count": 177
   },
   "routing-run": {
     "id": "routing-run",
@@ -2686,10 +2686,10 @@
       "SARVAM_API_KEY"
     ],
     "npm": "@ai-sdk/openai-compatible",
-    "api": "https://api.sarvam.ai/v1",
+    "api": "https://api.sarvam.ai/v2",
     "name": "Sarvam AI",
-    "doc": "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
-    "model_count": 2
+    "doc": "https://docs.sarvam.ai/api/token-factory/models",
+    "model_count": 7
   },
   "scaleway": {
     "id": "scaleway",
@@ -3074,7 +3074,7 @@
     "npm": "@ai-sdk/togetherai",
     "name": "Together AI",
     "doc": "https://docs.together.ai/docs/serverless-models",
-    "model_count": 33
+    "model_count": 39
   },
   "tokengo": {
     "id": "tokengo",
@@ -3500,7 +3500,7 @@
     "api": "https://api.z.ai/api/coding/paas/v4",
     "name": "Z.AI Coding Plan",
     "doc": "https://docs.z.ai/devpack/overview",
-    "model_count": 7
+    "model_count": 8
   },
   "zeldoc": {
     "id": "zeldoc",
@@ -3567,7 +3567,7 @@
     "api": "https://open.bigmodel.cn/api/coding/paas/v4",
     "name": "Zhipu AI Coding Plan",
     "doc": "https://docs.bigmodel.cn/cn/coding-plan/overview",
-    "model_count": 4
+    "model_count": 5
   },
   "zro": {
     "id": "zro",
