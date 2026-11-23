@@ -295,7 +295,7 @@
     "npm": "@ai-sdk/amazon-bedrock",
     "name": "Amazon Bedrock",
     "doc": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-    "model_count": 214
+    "model_count": 215
   },
   "ambient": {
     "id": "ambient",
@@ -702,6 +702,17 @@
     "name": "CommandCode",
     "doc": "https://commandcode.ai/docs/provider",
     "model_count": 93
+  },
+  "concentrate": {
+    "id": "concentrate",
+    "env": [
+      "CONCENTRATE_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai",
+    "api": "https://api.concentrate.ai/v1",
+    "name": "Concentrate",
+    "doc": "https://concentrate.ai/docs",
+    "model_count": 164
   },
   "confidential-ai": {
     "id": "confidential-ai",
@@ -1912,7 +1923,7 @@
     "api": "https://inference.us-west.modal.direct/v1",
     "name": "Modal",
     "doc": "https://modal.com/docs/guide/endpoints",
-    "model_count": 8
+    "model_count": 10
   },
   "model-oracle-ai": {
     "id": "model-oracle-ai",
@@ -2430,6 +2441,17 @@
     "doc": "https://powerspring.eu/models",
     "model_count": 7
   },
+  "primalabs": {
+    "id": "primalabs",
+    "env": [
+      "PRIMALABS_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://api.primalabs.ai/v1",
+    "name": "PrimaLabs",
+    "doc": "https://docs.primalabs.ai/inference/models",
+    "model_count": 6
+  },
   "prime": {
     "id": "prime",
     "env": [
@@ -2799,8 +2821,8 @@
     "npm": "@ai-sdk/openai-compatible",
     "api": "https://api.steadyrouter.com/v1",
     "name": "SteadyRouter",
-    "doc": "https://www.steadyrouter.com/site/docs.html",
-    "model_count": 21
+    "doc": "https://www.steadyrouter.com/site/docs.html?utm_source=models.dev",
+    "model_count": 20
   },
   "stepfun": {
     "id": "stepfun",
