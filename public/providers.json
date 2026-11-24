@@ -129,7 +129,7 @@
     "api": "https://api.aiand.com/v1",
     "name": "ai&",
     "doc": "https://docs.aiand.com/",
-    "model_count": 12
+    "model_count": 13
   },
   "aigrow": {
     "id": "aigrow",
@@ -161,7 +161,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 163
+    "model_count": 159
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -227,7 +227,7 @@
     "api": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
     "name": "Alibaba",
     "doc": "https://www.alibabacloud.com/help/en/model-studio/models",
-    "model_count": 53
+    "model_count": 34
   },
   "alibaba-cn": {
     "id": "alibaba-cn",
@@ -238,7 +238,7 @@
     "api": "https://dashscope.aliyuncs.com/compatible-mode/v1",
     "name": "Alibaba (China)",
     "doc": "https://www.alibabacloud.com/help/en/model-studio/models",
-    "model_count": 80
+    "model_count": 68
   },
   "alibaba-coding-plan": {
     "id": "alibaba-coding-plan",
@@ -249,7 +249,7 @@
     "api": "https://coding-intl.dashscope.aliyuncs.com/v1",
     "name": "Alibaba Coding Plan",
     "doc": "https://www.alibabacloud.com/help/en/model-studio/coding-plan",
-    "model_count": 10
+    "model_count": 7
   },
   "alibaba-coding-plan-cn": {
     "id": "alibaba-coding-plan-cn",
@@ -260,7 +260,7 @@
     "api": "https://coding.dashscope.aliyuncs.com/v1",
     "name": "Alibaba Coding Plan (China)",
     "doc": "https://help.aliyun.com/zh/model-studio/coding-plan",
-    "model_count": 10
+    "model_count": 7
   },
   "alibaba-token-plan": {
     "id": "alibaba-token-plan",
@@ -271,7 +271,7 @@
     "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1",
     "name": "Alibaba Token Plan",
     "doc": "https://www.alibabacloud.com/help/en/model-studio/token-plan-overview",
-    "model_count": 29
+    "model_count": 27
   },
   "alibaba-token-plan-cn": {
     "id": "alibaba-token-plan-cn",
@@ -282,7 +282,7 @@
     "api": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
     "name": "Alibaba Token Plan (China)",
     "doc": "https://www.alibabacloud.com/help/zh/model-studio/token-plan-overview",
-    "model_count": 29
+    "model_count": 27
   },
   "amazon-bedrock": {
     "id": "amazon-bedrock",
@@ -459,7 +459,7 @@
     "api": "https://inference.baseten.co/v1",
     "name": "Baseten",
     "doc": "https://docs.baseten.co/inference/model-apis/overview",
-    "model_count": 15
+    "model_count": 18
   },
   "bee": {
     "id": "bee",
@@ -668,7 +668,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 83
+    "model_count": 82
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -690,7 +690,7 @@
     "npm": "@ai-sdk/cohere",
     "name": "Cohere",
     "doc": "https://docs.cohere.com/docs/models",
-    "model_count": 17
+    "model_count": 19
   },
   "commandcode": {
     "id": "commandcode",
@@ -790,7 +790,7 @@
     "api": "https://${DATABRICKS_HOST}/ai-gateway/mlflow/v1",
     "name": "Databricks",
     "doc": "https://docs.databricks.com/aws/en/machine-learning/foundation-models/",
-    "model_count": 31
+    "model_count": 61
   },
   "deepinfra": {
     "id": "deepinfra",
@@ -800,7 +800,7 @@
     "npm": "@ai-sdk/deepinfra",
     "name": "Deep Infra",
     "doc": "https://deepinfra.com/models",
-    "model_count": 82
+    "model_count": 67
   },
   "deepseek": {
     "id": "deepseek",
@@ -899,7 +899,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 390
+    "model_count": 392
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -987,7 +987,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://docs.fireworks.ai/getting-started/introduction",
-    "model_count": 27
+    "model_count": 33
   },
   "fortytwo": {
     "id": "fortytwo",
@@ -1064,7 +1064,7 @@
     "api": "https://api.githubcopilot.com",
     "name": "GitHub Copilot",
     "doc": "https://docs.github.com/en/copilot",
-    "model_count": 44
+    "model_count": 33
   },
   "gitlab": {
     "id": "gitlab",
@@ -1241,7 +1241,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 94
+    "model_count": 118
   },
   "humain": {
     "id": "humain",
@@ -1506,7 +1506,7 @@
     "api": "https://api.keln.ai/v1",
     "name": "Keln",
     "doc": "https://docs.keln.ai/models-pricing/",
-    "model_count": 13
+    "model_count": 12
   },
   "kenari": {
     "id": "kenari",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 464
+    "model_count": 460
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1726,7 +1726,7 @@
     "api": "https://api.longcat.chat/openai",
     "name": "LongCat",
     "doc": "https://longcat.chat/platform/docs/",
-    "model_count": 3
+    "model_count": 2
   },
   "lowrouter": {
     "id": "lowrouter",
@@ -2242,7 +2242,7 @@
     "api": "https://opencode.ai/inference/openai/v1",
     "name": "OpenCode",
     "doc": "https://opencode.ai/v2/docs/console/models/",
-    "model_count": 145
+    "model_count": 146
   },
   "opencode-go": {
     "id": "opencode-go",
@@ -2275,7 +2275,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 377
+    "model_count": 373
   },
   "opper": {
     "id": "opper",
@@ -2833,7 +2833,7 @@
     "api": "https://api.stepfun.com/v1",
     "name": "StepFun (China)",
     "doc": "https://platform.stepfun.com/docs/zh/overview/concept",
-    "model_count": 7
+    "model_count": 9
   },
   "stepfun-ai": {
     "id": "stepfun-ai",
@@ -2844,7 +2844,7 @@
     "api": "https://api.stepfun.ai/v1",
     "name": "StepFun (Global)",
     "doc": "https://platform.stepfun.ai/docs/en/overview/concept",
-    "model_count": 7
+    "model_count": 8
   },
   "stepfun-ai-step-plan": {
     "id": "stepfun-ai-step-plan",
@@ -2866,7 +2866,7 @@
     "api": "https://api.stepfun.com/step_plan/v1",
     "name": "StepFun Step Plan (China)",
     "doc": "https://platform.stepfun.com/docs/zh/step-plan/integrations/reasoning-api",
-    "model_count": 5
+    "model_count": 6
   },
   "stepping-stone": {
     "id": "stepping-stone",
@@ -2965,7 +2965,7 @@
     "api": "https://api.lkeap.cloud.tencent.com/coding/v3",
     "name": "Tencent Coding Plan (China)",
     "doc": "https://cloud.tencent.com/document/product/1772/128947",
-    "model_count": 8
+    "model_count": 1
   },
   "tencent-token-plan": {
     "id": "tencent-token-plan",
@@ -2976,7 +2976,7 @@
     "api": "https://tokenhub.tencentmaas.com/plan/v3",
     "name": "Tencent Token Plan",
     "doc": "https://cloud.tencent.com/document/product/1823/130060",
-    "model_count": 15
+    "model_count": 19
   },
   "tencent-tokenhub": {
     "id": "tencent-tokenhub",
@@ -2987,7 +2987,7 @@
     "api": "https://tokenhub.tencentmaas.com/v1",
     "name": "Tencent TokenHub",
     "doc": "https://cloud.tencent.com/document/product/1823/130050",
-    "model_count": 4
+    "model_count": 24
   },
   "tensorx": {
     "id": "tensorx",
@@ -3042,7 +3042,7 @@
     "api": "https://tinker.thinkingmachines.dev/services/tinker-prod/anthropic/api/v1",
     "name": "Thinking Machines",
     "doc": "https://tinker-docs.thinkingmachines.ai/tinker/compatible-apis/anthropic/",
-    "model_count": 38
+    "model_count": 40
   },
   "tinfoil": {
     "id": "tinfoil",
@@ -3074,7 +3074,7 @@
     "npm": "@ai-sdk/togetherai",
     "name": "Together AI",
     "doc": "https://docs.together.ai/docs/serverless-models",
-    "model_count": 39
+    "model_count": 25
   },
   "tokengo": {
     "id": "tokengo",
@@ -3260,7 +3260,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 133
+    "model_count": 134
   },
   "vercel": {
     "id": "vercel",
@@ -3270,7 +3270,7 @@
     "npm": "@ai-sdk/gateway",
     "name": "Vercel AI Gateway",
     "doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway",
-    "model_count": 417
+    "model_count": 418
   },
   "verda": {
     "id": "verda",
@@ -3314,7 +3314,7 @@
     "api": "https://ark.cn-beijing.volces.com/api/v3",
     "name": "Volcengine Ark",
     "doc": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
-    "model_count": 16
+    "model_count": 17
   },
   "volcengine-coding-plan": {
     "id": "volcengine-coding-plan",
@@ -3325,7 +3325,7 @@
     "api": "https://ark.cn-beijing.volces.com/api/coding/v3",
     "name": "Volcengine Ark Coding Plan",
     "doc": "https://docs.volcengine.com/docs/ark/coding-plan-personal-get-started?lang=zh",
-    "model_count": 17
+    "model_count": 13
   },
   "vultr": {
     "id": "vultr",
@@ -3423,7 +3423,7 @@
     "api": "https://api.xiaomimimo.com/v1",
     "name": "Xiaomi",
     "doc": "https://platform.xiaomimimo.com/#/docs",
-    "model_count": 6
+    "model_count": 3
   },
   "xiaomi-token-plan-ams": {
     "id": "xiaomi-token-plan-ams",
@@ -3434,7 +3434,7 @@
     "api": "https://token-plan-ams.xiaomimimo.com/v1",
     "name": "Xiaomi Token Plan (Europe)",
     "doc": "https://platform.xiaomimimo.com/#/docs",
-    "model_count": 7
+    "model_count": 2
   },
   "xiaomi-token-plan-cn": {
     "id": "xiaomi-token-plan-cn",
@@ -3445,7 +3445,7 @@
     "api": "https://token-plan-cn.xiaomimimo.com/v1",
     "name": "Xiaomi Token Plan (China)",
     "doc": "https://platform.xiaomimimo.com/#/docs",
-    "model_count": 7
+    "model_count": 2
   },
   "xiaomi-token-plan-sgp": {
     "id": "xiaomi-token-plan-sgp",
@@ -3456,7 +3456,7 @@
     "api": "https://token-plan-sgp.xiaomimimo.com/v1",
     "name": "Xiaomi Token Plan (Singapore)",
     "doc": "https://platform.xiaomimimo.com/#/docs",
-    "model_count": 7
+    "model_count": 2
   },
   "xpersona": {
     "id": "xpersona",
@@ -3489,7 +3489,7 @@
     "api": "https://api.z.ai/api/paas/v4",
     "name": "Z.AI",
     "doc": "https://docs.z.ai/guides/overview/pricing",
-    "model_count": 18
+    "model_count": 19
   },
   "zai-coding-plan": {
     "id": "zai-coding-plan",
@@ -3556,7 +3556,7 @@
     "api": "https://open.bigmodel.cn/api/paas/v4",
     "name": "Zhipu AI",
     "doc": "https://docs.bigmodel.cn/cn/guide/start/pricing",
-    "model_count": 17
+    "model_count": 18
   },
   "zhipuai-coding-plan": {
     "id": "zhipuai-coding-plan",
