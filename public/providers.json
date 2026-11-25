@@ -161,7 +161,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 158
+    "model_count": 157
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -295,7 +295,7 @@
     "npm": "@ai-sdk/amazon-bedrock",
     "name": "Amazon Bedrock",
     "doc": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-    "model_count": 215
+    "model_count": 211
   },
   "ambient": {
     "id": "ambient",
@@ -426,7 +426,7 @@
     "npm": "@ai-sdk/azure",
     "name": "Azure",
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
-    "model_count": 99
+    "model_count": 101
   },
   "azure-cognitive-services": {
     "id": "azure-cognitive-services",
@@ -437,7 +437,7 @@
     "npm": "@ai-sdk/azure",
     "name": "Azure Cognitive Services",
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
-    "model_count": 99
+    "model_count": 101
   },
   "bailing": {
     "id": "bailing",
@@ -680,7 +680,7 @@
     "api": "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/v1",
     "name": "Cloudflare Workers AI",
     "doc": "https://developers.cloudflare.com/workers-ai/models/",
-    "model_count": 30
+    "model_count": 18
   },
   "cohere": {
     "id": "cohere",
@@ -712,7 +712,7 @@
     "api": "https://api.concentrate.ai/v1",
     "name": "Concentrate",
     "doc": "https://concentrate.ai/docs",
-    "model_count": 164
+    "model_count": 165
   },
   "confidential-ai": {
     "id": "confidential-ai",
@@ -899,7 +899,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 389
+    "model_count": 258
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 462
+    "model_count": 459
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1825,7 +1825,7 @@
     "api": "https://api-gateway.merge.dev/v1/ai-sdk",
     "name": "Merge Gateway",
     "doc": "https://docs.merge.dev/merge-gateway",
-    "model_count": 209
+    "model_count": 210
   },
   "meta": {
     "id": "meta",
@@ -2055,7 +2055,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 610
+    "model_count": 609
   },
   "nearai": {
     "id": "nearai",
@@ -2166,7 +2166,7 @@
     "api": "https://integrate.api.nvidia.com/v1",
     "name": "Nvidia",
     "doc": "https://docs.api.nvidia.com/nim/",
-    "model_count": 52
+    "model_count": 41
   },
   "oathbreaker": {
     "id": "oathbreaker",
@@ -2199,7 +2199,7 @@
     "api": "https://inference.generativeai.us-chicago-1.oci.oraclecloud.com/openai/v1",
     "name": "OCI Generative AI",
     "doc": "https://docs.oracle.com/en-us/iaas/Content/generative-ai/pretrained-models.htm",
-    "model_count": 9
+    "model_count": 10
   },
   "ofox": {
     "id": "ofox",
@@ -2231,7 +2231,7 @@
     "npm": "@ai-sdk/openai",
     "name": "OpenAI",
     "doc": "https://developers.openai.com/api/docs/models",
-    "model_count": 42
+    "model_count": 46
   },
   "opencode": {
     "id": "opencode",
@@ -2275,7 +2275,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 375
+    "model_count": 372
   },
   "opper": {
     "id": "opper",
@@ -2976,7 +2976,7 @@
     "api": "https://tokenhub.tencentmaas.com/plan/v3",
     "name": "Tencent Token Plan",
     "doc": "https://cloud.tencent.com/document/product/1823/130060",
-    "model_count": 19
+    "model_count": 22
   },
   "tencent-tokenhub": {
     "id": "tencent-tokenhub",
@@ -3260,7 +3260,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 134
+    "model_count": 135
   },
   "vercel": {
     "id": "vercel",
@@ -3325,7 +3325,7 @@
     "api": "https://ark.cn-beijing.volces.com/api/coding/v3",
     "name": "Volcengine Ark Coding Plan",
     "doc": "https://docs.volcengine.com/docs/ark/coding-plan-personal-get-started?lang=zh",
-    "model_count": 13
+    "model_count": 14
   },
   "vultr": {
     "id": "vultr",
@@ -3489,7 +3489,7 @@
     "api": "https://api.z.ai/api/paas/v4",
     "name": "Z.AI",
     "doc": "https://docs.z.ai/guides/overview/pricing",
-    "model_count": 19
+    "model_count": 20
   },
   "zai-coding-plan": {
     "id": "zai-coding-plan",
