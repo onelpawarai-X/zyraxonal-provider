@@ -161,7 +161,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 159
+    "model_count": 158
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -601,7 +601,7 @@
     "api": "https://llm.chutes.ai/v1",
     "name": "Chutes",
     "doc": "https://llm.chutes.ai/v1/models",
-    "model_count": 20
+    "model_count": 19
   },
   "clarifai": {
     "id": "clarifai",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 460
+    "model_count": 462
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 218
+    "model_count": 219
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1671,7 +1671,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 511
+    "model_count": 512
   },
   "llmtech": {
     "id": "llmtech",
@@ -2055,7 +2055,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 604
+    "model_count": 605
   },
   "nearai": {
     "id": "nearai",
@@ -2275,7 +2275,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 373
+    "model_count": 375
   },
   "opper": {
     "id": "opper",
@@ -2319,7 +2319,7 @@
     "api": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
     "name": "OVHcloud AI Endpoints",
     "doc": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog//",
-    "model_count": 11
+    "model_count": 13
   },
   "paraloncloud": {
     "id": "paraloncloud",
@@ -3074,7 +3074,7 @@
     "npm": "@ai-sdk/togetherai",
     "name": "Together AI",
     "doc": "https://docs.together.ai/docs/serverless-models",
-    "model_count": 25
+    "model_count": 26
   },
   "tokengo": {
     "id": "tokengo",
