@@ -306,7 +306,7 @@
     "api": "https://api.ambient.xyz/v1",
     "name": "Ambient",
     "doc": "https://ambient.xyz",
-    "model_count": 11
+    "model_count": 12
   },
   "amd": {
     "id": "amd",
@@ -668,7 +668,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 82
+    "model_count": 84
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -987,7 +987,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://docs.fireworks.ai/getting-started/introduction",
-    "model_count": 35
+    "model_count": 37
   },
   "fortytwo": {
     "id": "fortytwo",
@@ -1517,7 +1517,7 @@
     "api": "https://kenari.id/v1",
     "name": "Kenari",
     "doc": "https://kenari.id/docs",
-    "model_count": 83
+    "model_count": 82
   },
   "kilo": {
     "id": "kilo",
@@ -2055,7 +2055,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 609
+    "model_count": 608
   },
   "nearai": {
     "id": "nearai",
@@ -2242,7 +2242,7 @@
     "api": "https://opencode.ai/inference/openai/v1",
     "name": "OpenCode",
     "doc": "https://opencode.ai/v2/docs/console/models/",
-    "model_count": 146
+    "model_count": 147
   },
   "opencode-go": {
     "id": "opencode-go",
