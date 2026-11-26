@@ -161,7 +161,7 @@
     "api": "https://api.aimlapi.com/v1",
     "name": "AI/ML API",
     "doc": "https://docs.aimlapi.com",
-    "model_count": 157
+    "model_count": 156
   },
   "ainetcafe": {
     "id": "ainetcafe",
@@ -668,7 +668,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 84
+    "model_count": 85
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -712,7 +712,7 @@
     "api": "https://api.concentrate.ai/v1",
     "name": "Concentrate",
     "doc": "https://concentrate.ai/docs",
-    "model_count": 165
+    "model_count": 164
   },
   "confidential-ai": {
     "id": "confidential-ai",
@@ -899,7 +899,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 258
+    "model_count": 257
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -987,7 +987,7 @@
     "api": "https://api.fireworks.ai/inference/v1/",
     "name": "Fireworks AI",
     "doc": "https://docs.fireworks.ai/getting-started/introduction",
-    "model_count": 37
+    "model_count": 40
   },
   "fortytwo": {
     "id": "fortytwo",
@@ -1241,7 +1241,7 @@
     "api": "https://router.huggingface.co/v1",
     "name": "Hugging Face",
     "doc": "https://huggingface.co/docs/inference-providers",
-    "model_count": 120
+    "model_count": 125
   },
   "humain": {
     "id": "humain",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 459
+    "model_count": 458
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1671,7 +1671,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 512
+    "model_count": 518
   },
   "llmtech": {
     "id": "llmtech",
@@ -2055,7 +2055,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 608
+    "model_count": 609
   },
   "nearai": {
     "id": "nearai",
@@ -2461,7 +2461,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 73
+    "model_count": 72
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -2570,7 +2570,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://www.requesty.ai/models",
-    "model_count": 177
+    "model_count": 175
   },
   "routing-run": {
     "id": "routing-run",
@@ -2987,7 +2987,7 @@
     "api": "https://tokenhub.tencentmaas.com/v1",
     "name": "Tencent TokenHub",
     "doc": "https://cloud.tencent.com/document/product/1823/130050",
-    "model_count": 24
+    "model_count": 26
   },
   "tensorx": {
     "id": "tensorx",
