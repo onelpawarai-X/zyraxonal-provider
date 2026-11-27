@@ -227,7 +227,7 @@
     "api": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
     "name": "Alibaba",
     "doc": "https://www.alibabacloud.com/help/en/model-studio/models",
-    "model_count": 34
+    "model_count": 38
   },
   "alibaba-cn": {
     "id": "alibaba-cn",
@@ -899,7 +899,7 @@
     "api": "https://api.edenai.run/v3",
     "name": "Eden AI",
     "doc": "https://www.edenai.co/docs",
-    "model_count": 257
+    "model_count": 256
   },
   "empiriolabs": {
     "id": "empiriolabs",
@@ -1109,7 +1109,7 @@
     "npm": "@ai-sdk/google-vertex",
     "name": "Vertex",
     "doc": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
-    "model_count": 65
+    "model_count": 58
   },
   "google-vertex-anthropic": {
     "id": "google-vertex-anthropic",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 459
+    "model_count": 460
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 219
+    "model_count": 218
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1671,7 +1671,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 519
+    "model_count": 516
   },
   "llmtech": {
     "id": "llmtech",
@@ -2055,7 +2055,7 @@
     "api": "https://nano-gpt.com/api/v1",
     "name": "NanoGPT",
     "doc": "https://docs.nano-gpt.com",
-    "model_count": 611
+    "model_count": 610
   },
   "nearai": {
     "id": "nearai",
@@ -2570,7 +2570,7 @@
     "api": "https://router.requesty.ai/v1",
     "name": "Requesty",
     "doc": "https://www.requesty.ai/models",
-    "model_count": 175
+    "model_count": 179
   },
   "routing-run": {
     "id": "routing-run",
@@ -2977,6 +2977,17 @@
     "name": "Tencent Token Plan",
     "doc": "https://cloud.tencent.com/document/product/1823/130060",
     "model_count": 22
+  },
+  "tencent-token-plan-intl": {
+    "id": "tencent-token-plan-intl",
+    "env": [
+      "TENCENT_TOKEN_PLAN_API_KEY"
+    ],
+    "npm": "@ai-sdk/openai-compatible",
+    "api": "https://tokenhub-intl.tencentcloudmaas.com/plan/v3",
+    "name": "Tencent Token Plan (International)",
+    "doc": "https://intl.cloud.tencent.com/document/product/1300/81315",
+    "model_count": 13
   },
   "tencent-tokenhub": {
     "id": "tencent-tokenhub",
