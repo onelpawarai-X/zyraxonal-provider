@@ -668,7 +668,7 @@
     "npm": "ai-gateway-provider",
     "name": "Cloudflare AI Gateway",
     "doc": "https://developers.cloudflare.com/ai-gateway/",
-    "model_count": 85
+    "model_count": 86
   },
   "cloudflare-workers-ai": {
     "id": "cloudflare-workers-ai",
@@ -1528,7 +1528,7 @@
     "api": "https://api.kilo.ai/api/gateway",
     "name": "Kilo Gateway",
     "doc": "https://kilo.ai",
-    "model_count": 460
+    "model_count": 459
   },
   "kimi-code-plan-cn": {
     "id": "kimi-code-plan-cn",
@@ -1660,7 +1660,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "DevPass (LLM Gateway)",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 218
+    "model_count": 219
   },
   "llmgateway-providers": {
     "id": "llmgateway-providers",
@@ -1671,7 +1671,7 @@
     "api": "https://api.llmgateway.io/v1",
     "name": "LLM Gateway",
     "doc": "https://docs.llmgateway.io/",
-    "model_count": 516
+    "model_count": 519
   },
   "llmtech": {
     "id": "llmtech",
@@ -2275,7 +2275,7 @@
     "api": "https://openrouter.ai/api/v1",
     "name": "OpenRouter",
     "doc": "https://openrouter.ai/models",
-    "model_count": 375
+    "model_count": 374
   },
   "opper": {
     "id": "opper",
@@ -2461,7 +2461,7 @@
     "api": "https://api.pinference.ai/api/v1",
     "name": "Prime Inference",
     "doc": "https://docs.primeintellect.ai/inference/overview",
-    "model_count": 73
+    "model_count": 74
   },
   "privatemode-ai": {
     "id": "privatemode-ai",
@@ -3271,7 +3271,7 @@
     "npm": "venice-ai-sdk-provider",
     "name": "Venice AI",
     "doc": "https://docs.venice.ai",
-    "model_count": 135
+    "model_count": 134
   },
   "vercel": {
     "id": "vercel",
